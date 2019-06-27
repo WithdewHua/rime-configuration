@@ -1,0 +1,4 @@
+patch:
+  "style/layout/position": left
+  "style/layout/sticky_lines": 1 #固顶行数
+  "style/layout/max_entries": 5
