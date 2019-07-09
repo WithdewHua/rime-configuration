@@ -11,10 +11,12 @@ import_tables:
   - luna_pinyin.hanyu  #汉语大词典，多为2字词。
   - luna_pinyin.poetry  #常用诗词
   - luna_pinyin.cn_en    #重新整理的中英混合词条  
+  - luna_pinyin.english   #常用英文单词
   - luna_pinyin.net    #网络流行词，网上聊天常用的语句。3.6w
   - luna_pinyin.computer  #电脑词汇，多为硬件相关，软件方面有待完善。1w
   - luna_pinyin.history   #历史词库，囊扩中国古代史、近代史、现代史和世界历史。10w
   - luna_pinyin.name    #人名词库，含中外名人。1w
+  - luna_pinyin.place   #地名
   - luna_pinyin.idiom   #俗语，如题，含常用俗语，文青必备。6.6w
   - luna_pinyin.classical  #成语，含常用成语、文青标配。2.8w
   - luna_pinyin.diet   #饮食词汇大全，吃货必备。 15w
