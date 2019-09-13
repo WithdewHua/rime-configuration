@@ -1,0 +1,26 @@
+---
+name: withdewhua
+version: "2019-01-31"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+  - luna_pinyin   #默认词库
+  - luna_pinyin.extended  #基本扩展词库
+  - luna_pinyin.sgmain  #scomper 整理的搜狗词库
+  - luna_pinyin.comprehensive   #很全面的一般性综合词库，较多
+  - luna_pinyin.hanyu  #汉语大词典
+  - luna_pinyin.poetry  #常用诗词
+  - luna_pinyin.cn_en    #重新整理的中英混合词条，双拼不适合使用
+  - luna_pinyin.net    #网络流行语
+  - luna_pinyin.computer  #电脑相关
+  - luna_pinyin.history   #历史
+  - luna_pinyin.name    #人名
+  - luna_pinyin.place   #地名
+  - luna_pinyin.idiom   #常用俗语
+  - luna_pinyin.classical  #常用成语
+  - luna_pinyin.diet   #饮食
+  - luna_pinyin.daily   #日常生活
+  - luna_pinyin.movie   #电影
+  - luna_pinyin.music   #音乐
+  - luna_pinyin.website   #网站名字
+...
