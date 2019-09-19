@@ -48,7 +48,7 @@ patch:
   custom_phrase:
     dictionary: ""
     user_dict: custom_phrase
-    db_class: stabledb
+    db_class: tabledb
     enable_completion: false
     enable_sentence: false
     initial_quality: 1

@@ -27,6 +27,3 @@ http://rime.im/	rime	1
 Rime	rime	3
 UTF-8	utfba
 i@withdewhua.space	imail
-WithdewHua	withdew
-YouTube 	ytb
-YouTube Music	ytbm
