@@ -1,0 +1,4 @@
+[submodule "Share"]
+	path = Share
+	url = git@github.com:WithdewHua/static.git
+	branch = Share
