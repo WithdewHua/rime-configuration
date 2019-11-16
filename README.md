@@ -10,4 +10,4 @@
 
 `Dictionary` 文件夹下为收集的第三方词库，慎用，如果需要，可以自己选择性地添加。
 
-如需对各平台的文件作出修改（如同步文件夹设置），配置方法可以参考 [Rime 输入法配置记录](https://withdewhua.space/2019/01/30/rime-configuration/)。
+如需对各平台的文件作出修改（如同步文件夹设置），配置方法可以参考 [Rime 输入法配置记录](https://10101.io/2019/01/30/rime-configuration/)。
