@@ -1,6 +1,6 @@
 patch:
   schema_list:
-    - { schema: double_pinyin_flypy }
+    - { schema: double_pinyin }
 
   "menu/page_size": 6
 
