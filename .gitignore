@@ -8,3 +8,7 @@ build/
 *.userdb.txt
 user.yaml
 installation.yaml
+
+# IDE
+.vscode/*
+!.vscode/settings.json
