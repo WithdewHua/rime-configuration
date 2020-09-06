@@ -1,7 +1,7 @@
 # Rime dictionary
 # encoding: utf-8
 #
-# WithdewHua <i@withdewhua.space>
+# WithdewHua <i@10101.io>
 # 主要为一些专有名词、软件名等
 # 部署位置：
 # ~/.config/ibus/rime  (Linux)
@@ -21,7 +21,7 @@ AAC	aac
 AAX	aax
 AcFUN	acfun
 Adblock	adblock
-AdGuard adguard
+AdGuard	adguard
 ADSL	adsl
 AirDroid	airdroid
 AirDrop	airdrop
@@ -59,6 +59,7 @@ BBC	bbc
 Bitcron	bitcron
 BitDefender	bitdefender
 BitLocker	bitlocker
+Bitwarden	bitward en
 Blizzard	blizzard
 BlackBerry	blackberry
 Bluetooth	bluetooth

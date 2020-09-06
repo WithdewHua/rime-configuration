@@ -1,7 +1,7 @@
 # Rime dictionary
 # encoding: utf-8
 #
-# WithdewHua <i@withdewhua.space>
+# WithdewHua <i@10101.io>
 # 主要为一些长英文短语的缩写，方便快速输入
 # 部署位置：
 # ~/.config/ibus/rime  (Linux)
@@ -18,6 +18,9 @@ use_preset_vocabulary: true
 ...
 
 Amazon Cloud Drive	acd
+AdGuard	adg
+AdGuardHome	adh
+AdGuardHome	adg
 Adobe Illustrator	adobe
 Adobe Photoshop	adobe
 AirPort Express	airport
@@ -35,9 +38,13 @@ Arial Narrow	arial
 Arial Rounded	arial
 Arial Unicode	arial
 BetterTouchTool	btt
-Bitwarden	bitwar
+Bitwarden	bw
 BoldItalic	bold
 C++	cpp
+Clash for Android	cfa
+Clash for Windows	cfw
+Clash X	clashx
+Clash X Pro	clashxp
 Final Cut Pro	fcp
 Firefox	ff
 Google Chrome	gchrome
@@ -123,13 +130,14 @@ Thunderbolt Bridge	thunderbolt
 Thunderbolt Ethernet	thunderbolt
 TP-LINK	tp
 URL Scheme	url
-USB-A	usb
-USB-C	usb
+USB-A	usb	2
+USB-C	usb	1
 UTF-8	utf	3
 UTF-16	utf	2
 UTF-32	utf	1
 VirtualBox	vbox
 Virtual PC	vpc
+Visual Studio Code	vscode
 Xbox One	xbox
 YouTube 	ytb
 YouTube Music	ytbm
