@@ -1,0 +1,141 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# WithdewHua <i@withdewhua.space>
+# 主要为一些长英文短语的缩写，方便快速输入
+# 部署位置：
+# ~/.config/ibus/rime  (Linux)
+# ~/Library/Rime  (Mac OS)
+# %APPDATA%\Rime  (Windows)
+# 於重新部署後生效
+# no comment
+
+---
+name: easy_en.abbr
+version: "2019.9.19"
+sort: by_weight
+use_preset_vocabulary: true
+...
+
+Amazon Cloud Drive	acd
+Adobe Illustrator	adobe
+Adobe Photoshop	adobe
+AirPort Express	airport
+AirPort Extreme	airport
+Apple Music	imusic
+Apple News	inews
+Apple Pay	ipay
+Apple Pencil	ipencil
+Apple Remote	iremote
+Apple Store	istore
+Apple TV	atv
+Apple Watch	iwatch
+Arial Black	arial
+Arial Narrow	arial
+Arial Rounded	arial
+Arial Unicode	arial
+BetterTouchTool	btt
+Bitwarden	bitwar
+BoldItalic	bold
+C++	cpp
+Final Cut Pro	fcp
+Firefox	ff
+Google Chrome	gchrome
+Google Docs	gdocs
+Google Drive	gdrive
+Google Keep	gkeep
+Google Maps	gmaps
+Google Music	gmusic
+Google Play	gplay
+Google Slides	gslides
+iA Writer	ia
+iBooks Author	ibooks
+iCloud Drive	icloud
+iMac Pro	imac
+iPad Air	ipad
+iPad mini	ipad
+iPad Pro	ipad
+IPv4	ipv
+IPv6	ipv
+iStat Menus	istat
+iTunes Connect	itunes
+iTunes Match	itunes
+Kindle Format	kindle
+Kindle Oasis	kindle
+Kindle Paperwhite	kindle
+Kindle Unlimited	kindle
+Kindle Voyage	kindle
+LibreOffice	libre
+Mac App Store	mas
+Mac mini	mac
+Mac Pro	mac
+MacBook	macbook
+MacBook Air	macbook
+MacBook Pro	macbook
+macOS Mojave	macos
+macOS High Sierra	macos
+Magic Keyboard	magic
+Magic Mouse	magic
+Magic Mouse 2	magic
+Magic Trackpad	magic
+Magic Trackpad 2	magic
+Micro SD	micro
+Micro-SIM	micro
+Microsoft	microsoft
+Microsoft Office	microsoft
+Microsoft Word	microsoft
+Notepad++	notepad
+Objective-C	objc
+Objective-C	objective
+Oculus Rift	oculus
+Oculus VR	oculus
+OfficeSuite	office
+OmniFocus	omni
+OmniGraffle	omni
+OmniOutliner	omni
+OmniPlan	omni
+OneDrive	one
+OneNote	one
+OS X	osx
+OS X Server	osx
+OS X Server	osx 
+Outlook Express	outlook
+Photo Booth	photo
+PhotoDesk	photo
+Photoshop	photoshop
+PhpStorm	php
+Pokémon GO	pokemon
+Proxy Group	proxy
+PDF Expert	pdf
+Quantumult	quanx	1
+Quantumult X	quanx	2
+QuickTime Player	quick
+Sans Serif	sans
+Shadowsocks	ss	1000
+ShadowsocksR	ssr
+Sublime Text	sublime
+Surge iOS	surge
+Surge Mac	surge
+TCP/IP	tcp ip
+Thunderbird	thunder
+Thunderbolt	thunder
+Thunderbolt Bridge	thunderbolt
+Thunderbolt Ethernet	thunderbolt
+TP-LINK	tp
+URL Scheme	url
+USB-A	usb
+USB-C	usb
+UTF-8	utf	3
+UTF-16	utf	2
+UTF-32	utf	1
+VirtualBox	vbox
+Virtual PC	vpc
+Xbox One	xbox
+YouTube 	ytb
+YouTube Music	ytbm
+YouTube Premium	ytbp
+	apple
+ MUSIC	imusic
+ PAY	ipay
+ tv 4K	atv
+ WATCH	iwatch

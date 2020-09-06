@@ -1,0 +1,60 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# Luna Pinyin Extended Dictionary(Chinese&English) - 明月拼音擴充詞庫（含西文的詞彙）
+#   瑾昀 <cokunhui@gmail.com>
+# modified: WithdewHua <i@withdewhua.space>
+# 部署位置：
+# ~/.config/ibus/rime  (Linux)
+# ~/Library/Rime  (Mac OS)
+# %APPDATA%\Rime  (Windows)
+# 於重新部署後生效
+# no comment
+
+---
+name: luna_pinyin.cn_en
+version: "2019.9.19"
+sort: by_weight
+use_preset_vocabulary: true
+...
+
+ATM 機	atm ji
+Bilibili	bi zhan
+B 淋巴細胞	bi lin ba xi bao
+B 細胞	bi xi bao
+B 站	bi zhan
+CSS3	css san
+Google	gu ge
+HTML5	html wu
+IKEv2	ikev er
+IP 地址	ip di zhi
+IP 電話	ip dian hua
+IP 卡	ip ka
+K 歌	kei ge
+MAC 地址	mac di zhi
+POS 機	pos ji
+Q 幣	qq bi
+QQ 號	qq hao
+QQ 號碼	qq hao ma
+QQ 會員	qq hui yuan
+QQ 空間	qq kong jian
+QQ 羣	qq qun
+QQ 旋風	qq xuan feng
+QQ 郵箱	qq you xiang
+Quantumult	quan	2600
+Shadowrocket	xiao huo jian
+Shadowsocks	xiao fei ji
+ShadowsocksR	xiao fei ji
+SIM 卡	sim ka
+Squirrel	shu xu guan
+T 恤	ti xu
+T 恤衫	ti xu shan
+UIM 卡	uim ka
+USIM 卡	usim ka
+V2EX	vtex
+V2Ray	vtray
+Zhihu	zhi hu
+β 粒子	bei ta li zi
+β 射線	bei ta she xian
+γ 刀	ga ma dao
+γ 射線	ga ma she xian
