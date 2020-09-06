@@ -1,0 +1,12 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Rime
+build/
+*.userdb/
+*.userdb.txt
+user.yaml
+squirrel.*
+weasel.*
+installation.yaml

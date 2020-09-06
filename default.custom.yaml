@@ -1,0 +1,15 @@
+patch:
+  schema_list:
+    - { schema: double_pinyin_flypy }
+
+  "menu/page_size": 6
+
+  "switcher/hotkeys":
+    - "Control+Shift+F8"
+
+  "ascii_composer/switch_key":
+    Caps_Lock: commit_code
+    Control_L: inline_ascii
+    Control_R: noop
+    Shift_L: commit_code # 左右Shift上屏编码并切换为英文状态，inline_ascii 设定在有输入时不能切换至英文状态
+    Shift_R: commit_code #
