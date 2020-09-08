@@ -88,6 +88,8 @@ DDoS	ddos
 DevOps	devops
 DFU	dfu
 DHCP	dhcp
+Disney	disney
+Disney+	disney
 D-Link	dlink
 DNA	dna
 DNS	dns
@@ -133,6 +135,7 @@ GSM	gsm
 GUI	gui
 Hangouts	hangouts
 Handoff	hangoff
+HBO	hbo
 HDMI	hdmi
 HDR	hdr
 HEVC	hevc
@@ -203,6 +206,7 @@ Nano	nano
 NAS	nas
 NAT	nat
 NBA	nba
+Netflix	netflix
 NFC	nfc
 nPlayer	nplayer
 NTFS	ntfs
@@ -215,6 +219,7 @@ Perl	perl
 PNG	png
 Pokémon	pokemon
 POP	pop
+Pornhub	pornhub
 PPPoE	pppoe
 PPT	ppt
 Prisma	prisma
@@ -249,6 +254,7 @@ TCP	tcp
 TeamViewer	teamviewer
 TED	ted
 Telegram	telegram
+Telnet	telnet
 Tencent	tencent
 TestFlight	testflight
 Things	things
