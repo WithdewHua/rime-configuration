@@ -37,6 +37,8 @@ Arial Black	arial
 Arial Narrow	arial
 Arial Rounded	arial
 Arial Unicode	arial
+BandwagonHost	bwg
+BandwagonHost	bwh
 BetterTouchTool	btt
 Bitwarden	bw
 BoldItalic	bold
@@ -55,6 +57,7 @@ Google Maps	gmaps
 Google Music	gmusic
 Google Play	gplay
 Google Slides	gslides
+HBO Max	hbo
 iA Writer	ia
 iBooks Author	ibooks
 iCloud Drive	icloud
@@ -91,6 +94,7 @@ Micro-SIM	micro
 Microsoft	microsoft
 Microsoft Office	microsoft
 Microsoft Word	microsoft
+Netflix	nf	1000
 Notepad++	notepad
 Objective-C	objc
 Objective-C	objective
@@ -103,6 +107,8 @@ OmniOutliner	omni
 OmniPlan	omni
 OneDrive	one
 OneNote	one
+OnePlus	one
+OnePlus	op
 OS X	osx
 OS X Server	osx
 OS X Server	osx 
@@ -112,6 +118,7 @@ PhotoDesk	photo
 Photoshop	photoshop
 PhpStorm	php
 Pokémon GO	pokemon
+Pornhub	ph	1000
 Proxy Group	proxy
 PDF Expert	pdf
 Quantumult	quanx	1
