@@ -253,7 +253,7 @@ Tags	tags
 TCP	tcp
 TeamViewer	teamviewer
 TED	ted
-Telegram	telegram
+Telegram	telegram	1000
 Telnet	telnet
 Tencent	tencent
 TestFlight	testflight
