@@ -101,6 +101,7 @@ Droplr	droplr
 DVD	dvd
 EarPods	earpods
 Emacs	emacs
+Emby	emby
 Emoji	emoji
 ePub	epub
 eSATA	esata
@@ -141,6 +142,7 @@ HDR	hdr
 HEVC	hevc
 HHKB	hhkb
 HIEF	hief
+Hillstone	hillstone
 Homebrew	homebrew
 HomeKit	homekit
 HomePod	homepod
@@ -152,6 +154,7 @@ HTTP	http
 HTTPS	https
 iBooks  ibooks
 iCloud	icloud
+IDC	idc
 IDE	ide
 iExplorer	iexplorer
 iFFmpeg	iffmpeg
@@ -171,6 +174,7 @@ iPad	ipad
 iPhone	iphone
 IPS	ips
 IPTV	iptv
+IT	it
 iTerm	iterm
 iTunes	itunes
 iWatch	iwatch
@@ -181,9 +185,11 @@ JS Blocker	jsblocker
 JSLint	jslint
 Kindle	kindle
 Kodi	kodi
+LAMP	lamp
 LED	led
 Linux	linux
 Live Photo	livephoto
+LNMP	lnmp
 LTE	lte
 Mac	mac
 MacID	macid
@@ -216,6 +222,7 @@ Pages	pages
 PayPal	paypal
 PDF	pdf
 Perl	perl
+Plex	plex
 PNG	png
 Pokémon	pokemon
 POP	pop
@@ -232,6 +239,8 @@ PVC	pvc
 PyCharm	pycharm
 Quantumult	quantumult
 RAM	ram
+RDP	rdp
+Redis	redis
 RMB	rmb
 ROM	rom
 RSS	rss
@@ -276,6 +285,7 @@ Vim	vim
 Visio	visio
 VLC	vlc
 VMware	vmware
+VNC	vnc
 VoLTE	volte
 VPN	vpn
 VPS	vps
