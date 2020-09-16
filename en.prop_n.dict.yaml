@@ -85,6 +85,8 @@ CPU	cpu
 CSS	css
 Cydia	cydia
 DDoS	ddos
+Debian	debian
+Deepin	deepin
 DevOps	devops
 DFU	dfu
 DHCP	dhcp
@@ -194,6 +196,7 @@ LTE	lte
 Mac	mac
 MacID	macid
 macOS	macos
+Manjaro	manjaro
 MarkDown	markdown
 Mathtype	mathtype
 MarginNote	marginnote
