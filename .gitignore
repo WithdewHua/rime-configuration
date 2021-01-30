@@ -12,3 +12,5 @@ installation.yaml
 # IDE
 .vscode/*
 !.vscode/settings.json
+
+.ttxfolder
