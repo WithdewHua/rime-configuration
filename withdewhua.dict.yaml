@@ -10,6 +10,7 @@ import_tables:
   - luna_pinyin.hanyu  # 汉语大词典
   - luna_pinyin.poetry  # 常用诗词
   - luna_pinyin.cn_en    # 重新整理的中英混合词条
+  - zhwiki
   - en.prop_n # 一些专有名词，如软件名、公司名（完整拼写）
   - en.abbr # 缩写，以快速输入英文词组
 ...
