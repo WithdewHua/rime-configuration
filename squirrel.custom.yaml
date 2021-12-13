@@ -1,17 +1,5 @@
 patch:
-  show_notifications_when: appropriate # 状态通知，适当，也可设为全开（always）全关（never）
-
-#   style:
-#     color_scheme: mojave_dark
-    # horizontal: true
-    # inline_preedit: true
-    # candidate_format: "%c\u2005%@\u2005" # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
-    # font_point: 16 # 候选文字大小
-    # label_font_point: 14 # 候选编号大小
-    # corner_radius: 5 # 候选条圆角
-    # hilited_corner_radius: 3 # 高亮圆角
-    # border_height: 0 # 窗口边界高度，大于圆角半径才生效
-    # border_width: 0 # 窗口边界宽度，大于圆角半径才生效
+  show_notifications_when: appropriate        # 状态通知，适当，也可设为全开（always）全关（never）
 
   style/color_scheme: system_blue             # 方案命名，不能有空格
   preset_color_schemes:
@@ -30,9 +18,9 @@ patch:
       text_color: 0x424242                    # 拼音行文字颜色
       label_color: 0x999999                   # 预选栏编号颜色
 
-      horizontal: true                        # 水平排列
+      horizontal: false                       # 水平排列
       inline_preedit: true                    # 单行显示，false双行显示
-      candidate_format: "%c\u2005%@\u2005"   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
+      candidate_format: "%c\u2005%@\u2005"    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
       font_point: 16                          # 候选文字大小
       label_font_point: 13                    # 候选编号大小
       label_font_face: "SFCompactText-Regular"# 候选词编号字体
