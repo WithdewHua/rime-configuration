@@ -2,16 +2,16 @@
 #@/db_name	custom_phrase.txt
 #@/db_type	tabledb
 #@/rime_version	1.5.3
-#@/tick	57
+#@/tick	60
 fuckgfw@tutanota.com	fmail	2
 i@10101.io	imail	8
 正在開會，一會給你回復：）	meet	0
 馬上到！	msd	1
 https://10101.io/	myblog	24
-Rime	rime	18
+Rime	rime	20
 http://rime.im/	rime	2
 中州韻輸入法引擎	rime	3
-WithdewHua	whua	8
+WithdewHua	whua	9
 WTF	wtf	3
 What the fuck!	wtf	1
 什麼玩意兒!	wtf	2
