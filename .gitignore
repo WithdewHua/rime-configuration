@@ -10,7 +10,6 @@ user.yaml
 installation.yaml
 
 # IDE
-.vscode/*
-!.vscode/settings.json
+.vscode
 
 .ttxfolder
