@@ -1,0 +1,14 @@
+---
+name: rime_cn
+version: "2023-04-07"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+  - dictionary/cn_dicts/luna_pinyin   # 默认汉语词库
+  - dictionary/cn_dicts/luna_pinyin.extended  # 基本扩展词库
+  - dictionary/cn_dicts/zhwiki
+  - dictionary/cn_dicts/luna_pinyin.sgmain  # scomper 整理的搜狗词库
+  - dictionary/cn_dicts/luna_pinyin.hanyu  # 汉语大词典
+  - dictionary/cn_dicts/luna_pinyin.poetry  # 常用诗词
+  - dictionary/cn_dicts/luna_pinyin.cn_en    # 重新整理的中英混合词条
+...
