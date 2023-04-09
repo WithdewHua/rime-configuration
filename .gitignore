@@ -4,6 +4,7 @@ Thumbs.db
 
 # Rime
 build/
+custom_phrase.txt
 *.userdb/
 *.userdb.txt
 user.yaml
@@ -13,3 +14,4 @@ installation.yaml
 .vscode
 
 .ttxfolder
+
