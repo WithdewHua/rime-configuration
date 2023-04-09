@@ -1,6 +1,6 @@
 patch:
   schema_list:
-    - { schema: double_pinyin }
+    - schema: double_pinyin
 
   "menu/page_size": 10
 
@@ -13,3 +13,13 @@ patch:
     Control_R: noop
     Shift_L: commit_code # 左右Shift上屏编码并切换为英文状态，inline_ascii 设定在有输入时不能切换至英文状态
     Shift_R: commit_code #
+
+  key_binder/bindings: # 若开启, 去掉前面#
+    # 翻页
+    - { when: composing, accept: Tab, send: Shift+Right } # "tab" 键分词
+    - { when: paging, accept: minus, send: Page_Up } # "-" 上一页
+    - { when: has_menu, accept: equal, send: Page_Down } # "=" 下一页
+    - { when: paging, accept: comma, send: Page_Up } # "," 上一页
+    - { when: has_menu, accept: period, send: Page_Down } # "." 下一页
+    - { when: paging, accept: bracketleft, send: Page_Up } # "[" 上一页
+    - { when: has_menu, accept: bracketright, send: Page_Down } # "]" 下一页

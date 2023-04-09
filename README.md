@@ -34,3 +34,10 @@
 将仓库克隆或者复制到 Rime 用户文件夹中，重新部署即可。
 
 增加输入方案、添加词库、设置同步等自定义配置可参考 [Rime 输入法配置记录](https://www.10101.io/2019/01/30/rime-configuration)
+
+### 感谢
+
+- [rime](https://github.com/rime/home)
+- [ssnhd/rime](https://github.com/ssnhd/rime)
+- [scomper/Rime](https://github.com/scomper/rime)
+- [felixonmars/fcitx5-pinyin-zhwiki](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
