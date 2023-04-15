@@ -1,3 +1,2 @@
 patch:
-  translator:
-    dictionary: rime_en
+  translator/dictionary: rime_en
