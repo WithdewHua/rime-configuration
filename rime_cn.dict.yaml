@@ -1,14 +1,10 @@
 ---
 name: rime_cn
-version: "2023-04-07"
-sort: by_weight
-use_preset_vocabulary: true
+version: "2023-04-16"
 import_tables:
-  - dictionary/cn_dicts/8105    # rime-ice 8105 单字表
-  - dictionary/cn_dicts/luna_pinyin   # luna_pinyin 默认汉语词库
-  - dictionary/cn_dicts/luna_pinyin.extended  # luna_pinyin 基本扩展词库
-  - dictionary/cn_dicts/luna_pinyin.sgmain  # scomper 整理的搜狗词库
-  - dictionary/cn_dicts/luna_pinyin.poetry  # luna_pinyin 常用诗词
-  - dictionary/cn_dicts/luna_pinyin.hanyu  # luna_pinyin 汉语大词典
+  - dictionary/cn_dicts/rime-ice/8105    # rime-ice 8105 单字表
+  - dictionary/cn_dicts/rime-ice/41448    # rime-ice 41448 大字表
+  - dictionary/cn_dicts/rime-ice/base    # rime-ice 基础词库
+  - dictionary/cn_dicts/rime-ice/ext    # rime-ice 扩展词库
   - dictionary/cn_dicts/zhwiki    # fcitx5-pinyin-zhwiki
 ...
