@@ -1,0 +1,8 @@
+# Rime table
+#@/db_name	custom_phrase_double_pinyin.txt
+#@/db_type	tabledb
+#@/rime_version	1.5.3
+#@/tick	60
+Rime	rime	20
+http://rime.im/	rime	2
+中州韻輸入法引擎	rime	3

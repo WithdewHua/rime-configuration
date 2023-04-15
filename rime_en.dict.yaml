@@ -1,10 +1,6 @@
 ---
 name: rime_en
-version: "2023-04-07"
-sort: by_weight
-use_preset_vocabulary: true
+version: "2023-04-16"
 import_tables:
-  - dictionary/en_dicts/easy_en
-  - dictionary/en_dicts/en.abbr
-  - dictionary/en_dicts/en.prop_n
+  - dictionary/en_dicts/rime-ice/en
 ...

@@ -27,7 +27,7 @@
 
 ### 输入方案
 
-本仓库中文输入方案仅包含自然码双拼。
+本仓库中文输入方案仅包含[自然码双拼](https://github.com/iDvel/rime-ice/blob/main/double_pinyin.schema.yaml)。
 
 ### 使用说明
 
@@ -39,5 +39,7 @@
 
 - [rime](https://github.com/rime/home)
 - [ssnhd/rime](https://github.com/ssnhd/rime)
+- [iDvel/rime-ice](https://github.com/iDvel/rime-ice)
 - [scomper/Rime](https://github.com/scomper/rime)
+- [scomper/rime-ice](https://github.com/scomper/rime-ice)
 - [felixonmars/fcitx5-pinyin-zhwiki](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
