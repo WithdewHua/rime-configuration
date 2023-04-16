@@ -7,7 +7,7 @@
     - path: opencc/emoji.txt
       local_path: Rime/opencc/emoji.txt
     - path: opencc/others.txt
-      local_path: Rime/opencc/emoji.txt
+      local_path: Rime/opencc/others.txt
     - path: en_dicts/en.dict.yaml
       local_path: Rime/dictionary/en_dicts/rime-ice/en.dict.yaml
     - path: cn_dicts/8105.dict.yaml
