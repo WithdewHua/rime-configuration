@@ -1,6 +1,0 @@
----
-name: rime_en
-version: "2023-04-16"
-import_tables:
-  - dictionary/en_dicts/rime-ice/en
-...
