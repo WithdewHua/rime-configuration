@@ -1,5 +1,6 @@
 - owner: iDvel
   repo: rime-ice
+  branch: main
   files:
     - path: opencc/emoji.json
       local_path: Rime/opencc/emoji.json
