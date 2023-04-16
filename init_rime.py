@@ -9,7 +9,7 @@ current_platform = platform.system()
 
 # 根据不同平台设置相应的路径
 if current_platform == "Windows":
-    rime_path = r"%APPDATA%\Rime"
+    rime_path = os.path.join(os.getenv("APPDATA"), "Rime")
 
 elif current_platform == "Linux":
     rime_path = "~/.local/share/fcitx5/rime"
