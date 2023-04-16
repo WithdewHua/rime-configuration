@@ -6,5 +6,6 @@ import_tables:
   - dictionary/cn_dicts/rime-ice/41448    # rime-ice 41448 大字表
   - dictionary/cn_dicts/rime-ice/base    # rime-ice 基础词库
   - dictionary/cn_dicts/rime-ice/ext    # rime-ice 扩展词库
+  - dictionary/cn_dicts/rime-ice/tencent    # rime-ice tencent AI 词库
   - dictionary/cn_dicts/zhwiki    # fcitx5-pinyin-zhwiki
 ...

@@ -17,7 +17,6 @@ Clash for Windows	cfw	1
 Clash X	cx	2
 Clash X Pro	cx	1
 Emby	emby	1
-https://rime.im/	rime	1
 IP	ip	3
 IPv4	ip	2
 IPv6	ip	1
