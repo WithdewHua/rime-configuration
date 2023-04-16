@@ -4,34 +4,66 @@
 
 ### 文件说明
 
-仓库中部分文件为平台独有，除以下特别说明的，其余文件为各平台共享。
+```bash
+Rime
+├── Android
+│  ├── backgrounds
+│  ├── trime.yaml
+│  ├── 单静.trime.custom.yaml
+│  └── 单静.trime.yaml
+├── Common
+│  ├── custom_phrase_double_pinyin.txt
+│  ├── default.custom.yaml
+│  ├── default.yaml
+│  ├── dictionary
+│  ├── double_pinyin.custom.yaml
+│  ├── double_pinyin.schema.yaml
+│  ├── liangfen.dict.yaml
+│  ├── liangfen.schema.yaml
+│  ├── melt_eng.custom.yaml
+│  ├── melt_eng.schema.yaml
+│  ├── opencc
+│  ├── rime.lua
+│  ├── rime_cn.dict.yaml
+│  ├── rime_en.dict.yaml
+│  ├── symbols.custom.yaml
+│  └── zh-hans-t-essay-bgw.gram
+├── Darwin
+│  └── squirrel.custom.yaml
+├── Linux
+│  └── anran.tar.gz
+└── Windows
+   └── weasel.custom.yaml
+```
 
-#### Mac
+仓库中 `Rime` 目录下为 Rime 所有配置文件，其中：
 
-- `squirrel.custom.yaml`: 鼠须管自定义配置
-
-#### Linux
-
-- `anran.tar.gz`：fcitx5 rime 主题
-
-#### Windows
-
-- `weasel.custom.yaml`: 小狼毫自定义配置
-
-#### Android
-
-- `trime.yaml`: 同文输入法配置
-- `单静.trime.yaml`: 单静主题配置
-- `单静.trime.custom.yaml`: 单静主题自定义配置
-- `backgrounds`: 主题背景图片文件夹
+  - `Common` 目录为所有平台共享内容；
+  - 其余指定平台类型文件夹内容为该平台独享
 
 ### 输入方案
 
-本仓库中文输入方案仅包含[自然码双拼](https://github.com/iDvel/rime-ice/blob/main/double_pinyin.schema.yaml)。
+本仓库中文输入方案仅包含[自然码双拼](https://github.com/iDvel/rime-ice/blob/main/double_pinyin.schema.yaml)，中英文混输采用 [melt_eng](https://github.com/tumuyan/rime-melt)。
 
 ### 使用说明
 
-将仓库克隆或者复制到 Rime 用户文件夹中，重新部署即可。
+#### 桌面平台
+
+```python
+# 克隆当前项目
+git clone https://github.com/WithdewHua/rime-configuration.git
+
+# 复制所有文件至 Rime 用户目录
+python3 init_rime.py
+
+# deploy&enjoy!
+```
+
+#### 移动平台
+
+将仓库 `Rime/Common` 及 `Rime/<平台类型>` 文件夹内容复制到 Rime 用户文件夹中，重新部署即可。
+
+### 更多
 
 增加输入方案、添加词库、设置同步等自定义配置可参考 [Rime 输入法配置记录](https://www.10101.io/2019/01/30/rime-configuration)
 
