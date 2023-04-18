@@ -53,7 +53,7 @@ Rime
 # 克隆当前项目
 git clone https://github.com/WithdewHua/rime-configuration.git
 
-# 复制所有文件至 Rime 用户目录
+# 复制所有文件至 Rime 用户目录，Windows 平台需注意先退出算法服务
 python3 init_rime.py
 
 # deploy&enjoy!
