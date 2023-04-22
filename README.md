@@ -41,9 +41,26 @@ Rime
   - `Common` 目录为所有平台共享内容；
   - 其余指定平台类型文件夹内容为该平台独享
 
-### 输入方案
+### 配置说明
 
-本仓库中文输入方案仅包含[自然码双拼](https://github.com/iDvel/rime-ice/blob/main/double_pinyin.schema.yaml)，中英文混输采用 [melt_eng](https://github.com/tumuyan/rime-melt)。
+#### 输入方案
+
+- 自然码双拼
+  - [雾凇拼音简体词库版](https://github.com/iDvel/rime-ice/blob/main/double_pinyin.schema.yaml)
+  - [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入方案
+  - [两分输入法](http://cheonhyeong.com/Simplified/download.html) 方案拼字(`L` 触发)
+  - [雾凇拼音 Emoji 输入方案](https://github.com/iDvel/rime-ice/blob/main/opencc/emoji.json)
+  - 基于 [scomper/Rime](https://github.com/scomper/rime) 自调整的符号输入 (`V` 触发)
+
+#### 词库
+
+- [雾凇拼音词库](https://github.com/iDvel/rime-ice)
+  - `8105` 字表
+  - `41448` 字表
+  - `base` 基础词库
+  - `ext` 扩展词库
+  - `tencent` 腾讯词向量
+- [`zhwiki` 百万维基词库](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
 
 ### 使用说明
 
