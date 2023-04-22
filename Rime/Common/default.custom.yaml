@@ -24,5 +24,7 @@ patch:
     - { when: has_menu, accept: equal, send: Page_Down } # "=" 下一页
     - { when: paging, accept: comma, send: Page_Up } # "," 上一页
     - { when: has_menu, accept: period, send: Page_Down } # "." 下一页
-    - { when: paging, accept: bracketleft, send: Page_Up } # "[" 上一页
-    - { when: has_menu, accept: bracketright, send: Page_Down } # "]" 下一页
+    # - { when: paging, accept: bracketleft, send: Page_Up } # "[" 上一页
+    # - { when: has_menu, accept: bracketright, send: Page_Down } # "]" 下一页
+  key_binder/select_first_character: 'bracketleft'
+  key_binder/select_last_character: 'bracketright'
