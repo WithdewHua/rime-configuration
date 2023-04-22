@@ -47,9 +47,13 @@ Rime
 - 自然码双拼
   - [雾凇拼音简体词库版](https://github.com/iDvel/rime-ice/blob/main/double_pinyin.schema.yaml)
   - [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入方案
-  - [两分输入法](http://cheonhyeong.com/Simplified/download.html) 方案拼字(`L` 触发)
-  - [雾凇拼音 Emoji 输入方案](https://github.com/iDvel/rime-ice/blob/main/opencc/emoji.json)
-  - 基于 [scomper/Rime](https://github.com/scomper/rime) 自调整的符号输入 (`V` 触发)
+
+#### 扩展功能
+
+- 拼字：[两分输入法方案](http://cheonhyeong.com/Simplified/download.html) (`L` 触发)
+- Emoji 输入: [雾凇拼音 Emoji 方案](https://github.com/iDvel/rime-ice/blob/main/opencc/emoji.json)
+- 符号输入：基于 [scomper/Rime](https://github.com/scomper/rime) 自调整的符号输入 (`V` 触发)
+- [以词定字](https://github.com/BlindingDark/rime-lua-select-character)：快捷键 `[ ]`
 
 #### 词库
 
