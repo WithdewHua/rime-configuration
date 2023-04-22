@@ -4,7 +4,7 @@
 
 ### 文件说明
 
-```bash
+```shell
 Rime
 ├── Android
 │  ├── backgrounds
@@ -31,7 +31,6 @@ Rime
 ├── Darwin
 │  └── squirrel.custom.yaml
 ├── Linux
-│  └── anran.tar.gz
 └── Windows
    └── weasel.custom.yaml
 ```
