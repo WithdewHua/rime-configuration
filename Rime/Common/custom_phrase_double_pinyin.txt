@@ -11,7 +11,6 @@
 AdGuard	adg	3
 AdGuardHome	adg	2
 Bitwarden	bw	1
-B 站	bvj	1
 Clash for Android	cfa	1
 Clash for Windows	cfw	1
 Clash X	cx	2
@@ -26,7 +25,6 @@ Surge	surge	5
 Surge iOS	surge	4
 Surge Mac	surge	3
 TCP/IP	tcp	0
-U 盘	upj	1
 URL Scheme	url	1
 USB-A	usb	2
 USB-B	usb	1
