@@ -1,0 +1,22 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# WithdewHua <i@10101.io>
+# 中英文混合词条，中英文间隔一字符
+#
+
+---
+name: cn_en
+version: "2023-05-01"
+sort: by_weight
+...
+
+阿 Q	a "q"
+A 站	"a" zhan
+ATM 机	"atm" ji
+B 站	"b" zhan
+哆啦 A 梦	duo la "a" meng
+PT 站	"pt" zhan
+QQ 号	"qq" hao
+T 恤	"t" xu
+U 盘	"u" pan

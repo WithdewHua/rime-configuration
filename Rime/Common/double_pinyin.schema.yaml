@@ -257,7 +257,9 @@ speller:
     - xform/ui$/V/
     - xform/(.)ou$/$1B/
     - xform/in$/N/
+    # 中英文混输，见 https://github.com/iDvel/rime-ice/issues/230
+    - xform/"//
     - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
-    - abbrev/^(.).+$/$1/ # 首字母简拼
+    # - abbrev/^(.).+$/$1/ # 首字母简拼
     # 可输入大写字母。因为上面的双拼拼写规则用掉了大写字母。做了 xlit 转写，同时适配全拼和双拼。
     - xlit/āḃçďēḟḡĥīĵḱĺḿńōṕɋŕśťūṽẃẋȳź/ABCDEFGHIJKLMNOPQRSTUVWXYZ/
