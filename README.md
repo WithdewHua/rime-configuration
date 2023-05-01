@@ -64,6 +64,7 @@ Rime
   - `ext` 扩展词库
   - `tencent` 腾讯词向量
 - [`zhwiki` 百万维基词库](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
+- `cn_en` 中英文混合词条
 
 ### 使用说明
 
