@@ -2,7 +2,7 @@
 # encoding: utf-8
 #
 # WithdewHua <i@10101.io>
-# 中英文混合词条，中英文间隔一字符
+# 中英文混合词条
 #
 
 ---
@@ -17,8 +17,16 @@ A 站	"a" zhan
 ATM 机	"atm" ji
 B 站	"b" zhan
 哆啦 A 梦	duo la "a" meng
+JS 脚本	"js" jiao ben
+lua 脚本	"lua" jiao ben
 PT 站	"pt" zhan
+Python 脚本	"python" jiao ben
+QQ 飞车	"qq" fei che
 QQ 号	"qq" hao
+QQ 空间	"qq" kong jian
+QQ 游戏	"qq" you xi
 圈 X	quan "x"
+Rime 输入法	"rime" shu ru fa
+shell 脚本	"shell" jiao ben
 T 恤	"t" xu
 U 盘	"u" pan
