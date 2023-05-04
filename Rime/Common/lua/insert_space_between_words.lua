@@ -1,4 +1,4 @@
--- 中英文字符间插入空格
+-- 候选词中英文字符间插入空格
 
 local function insert_space_between_words(input, env)
     for cand in input:iter() do

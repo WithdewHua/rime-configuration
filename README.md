@@ -20,6 +20,7 @@ Rime
 │  ├── double_pinyin.schema.yaml
 │  ├── liangfen.dict.yaml
 │  ├── liangfen.schema.yaml
+│  ├── lua
 │  ├── melt_eng.custom.yaml
 │  ├── melt_eng.schema.yaml
 │  ├── opencc
@@ -55,6 +56,19 @@ Rime
 - 符号输入：基于 [scomper/Rime](https://github.com/scomper/rime) 自调整的符号输入 (`V` 触发)
 - [以词定字](https://github.com/BlindingDark/rime-lua-select-character)：快捷键 `[ ]`
 
+##### Lua 脚本说明
+
+| 脚本名 | 脚本说明 |
+| --- | --- |
+| `datetime` | 用于输入日期、星期、时间 |
+| `unicode` | 用于输入 unicode |
+| `v_mode_filter` | 符号输入（V 模式），单字符优先 |
+| `rime_lua_select_character` | 以词定字 |
+| `reduce_english_filter` | 用于降低部分英语单词的权重 |
+| `long_word_filter` | 长句优先 |
+| `is_that_a_user_dict` | 候选词 comment 中增加 * 标识用户词 |
+| `insert_space_between_words` | 候选词中英文间增加空格 |
+
 #### 词库
 
 - [雾凇拼音词库](https://github.com/iDvel/rime-ice)
@@ -64,7 +78,7 @@ Rime
   - `ext` 扩展词库
   - `tencent` 腾讯词向量
 - [`zhwiki` 百万维基词库](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
-- `cn_en` 中英文混合词条
+- 自维护 `cn_en` 中英文混合词条
 
 ### 使用说明
 
