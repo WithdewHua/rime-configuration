@@ -21,3 +21,6 @@ unicode = require("unicode")
 -------------------------------------------------------------
 -- 这是用户词吗？
 is_that_a_user_dict = require("is_that_a_user_dict")
+-------------------------------------------------------------
+-- 中英文字符间插入空格
+insert_space_between_words = require("insert_space_between_words")
