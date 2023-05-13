@@ -4,6 +4,7 @@ patch:
   style/color_scheme: wechat_light             # 方案命名，不能有空格
   style/color_scheme_dark: wechat_dark
   style/horizontal: false
+  style/font_face: "LXGW WenKai, HanaMinA, HanaMinB"
   preset_color_schemes:
     system_blue:
       author: "scomper <scomper@gmail.com>"   # 作者信息
@@ -43,7 +44,7 @@ patch:
       comment_text_color: 0x999999              # 拼音等提示文字颜色
       corner_radius: 5                          # 窗口圆角
       hilited_corner_radius: 5                  # 高亮圆角
-      font_face: LXGWWenKai-Regular             # 候选词字体
+      # font_face: LXGWWenKai-Regular           # 候选词字体
       font_point: 16                            # 候选字大小
       hilited_candidate_back_color: 0x75B100    # 第一候选项背景色
       hilited_candidate_text_color: 0xFFFFFF    # 第一候选项文字颜色
@@ -62,7 +63,7 @@ patch:
       comment_text_color: 0x999999              # 拼音等提示文字颜色
       corner_radius: 5                          # 窗口圆角
       hilited_corner_radius: 5                  # 高亮圆角
-      font_face: LXGWWenKai-Regular             # 候选词字体
+      # font_face: LXGWWenKai-Regular           # 候选词字体
       font_point: 16                            # 候选字大小
       hilited_candidate_back_color: 0x75B100    # 第一候选项背景色
       hilited_candidate_text_color: 0xFFFFFF    # 第一候选项文字颜色
