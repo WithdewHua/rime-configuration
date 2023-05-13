@@ -49,12 +49,14 @@ Rime
   - [雾凇拼音简体词库版](https://github.com/iDvel/rime-ice/blob/main/double_pinyin.schema.yaml)
   - [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入方案
 
-#### 扩展功能
+#### 输入扩展功能
 
 - 拼字：[两分输入法方案](http://cheonhyeong.com/Simplified/download.html) (`L` 触发)
 - Emoji 输入: [雾凇拼音 Emoji 方案](https://github.com/iDvel/rime-ice/blob/main/opencc/emoji.json)
 - 符号输入：基于 [scomper/Rime](https://github.com/scomper/rime) 自调整的符号输入 (`V` 触发)
 - [以词定字](https://github.com/BlindingDark/rime-lua-select-character)：快捷键 `[ ]`
+- [Unocode 输入](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)：`U` 触发
+- [数字中文大写输入](https://github.com/yanhuacuo/98wubi-tables)：`R` 触发
 
 ##### Lua 脚本说明
 
@@ -68,6 +70,7 @@ Rime
 | `long_word_filter` | 长句优先 |
 | `is_in_user_dict` | 候选词 comment 中增加 * 标识用户词 |
 | `insert_space_between_words` | 候选词中英文间增加空格 |
+| `number_translator` | 对输入的数字进行大写转换 |
 
 #### 词库
 
