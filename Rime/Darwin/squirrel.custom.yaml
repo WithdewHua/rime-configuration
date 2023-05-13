@@ -1,10 +1,15 @@
 patch:
-  show_notifications_when: appropriate        # 状态通知，适当，也可设为全开（always）全关（never）
-
-  style/color_scheme: wechat_light             # 方案命名，不能有空格
+  # 状态通知，适当，也可设为全开（always）全关（never）
+  show_notifications_when: appropriate            
+  # 主题方案
+  style/color_scheme: wechat_light             
   style/color_scheme_dark: wechat_dark
+  # 水平排列
   style/horizontal: false
+  # 候选词字体
   style/font_face: "LXGW WenKai, HanaMinA, HanaMinB"
+
+
   preset_color_schemes:
     system_blue:
       author: "scomper <scomper@gmail.com>"   # 作者信息
@@ -73,4 +78,6 @@ patch:
       candidate_text_color: 0xe9e9ea            # 预选项文字颜色
       inline_preedit: true                      # 拼音位于： 候选框 false | 行内 true
 
+
+  # 应用选项
   "app_options/com.runningwithcrayons.Alfred-3/ascii_mode": true
