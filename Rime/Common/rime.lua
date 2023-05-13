@@ -24,3 +24,6 @@ is_in_user_dict = require("is_in_user_dict")
 -------------------------------------------------------------
 -- 中英文字符间插入空格
 insert_space_between_words = require("insert_space_between_words")
+-------------------------------------------------------------
+-- 数字大写
+number_translator = require("number_translator")
