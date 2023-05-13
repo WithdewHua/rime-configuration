@@ -116,3 +116,5 @@ python3 init_rime.py
 - [scomper/Rime](https://github.com/scomper/rime)
 - [scomper/rime-ice](https://github.com/scomper/rime-ice)
 - [felixonmars/fcitx5-pinyin-zhwiki](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
+- [霞鹜文楷](https://github.com/lxgw/LxgwWenKai)
+- [花园明朝](http://fonts.jp/hanazono/)
