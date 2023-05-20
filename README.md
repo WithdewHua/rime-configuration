@@ -88,7 +88,7 @@ Rime
 
 #### 桌面平台
 
-```python
+```shell
 # 克隆当前项目
 git clone https://github.com/WithdewHua/rime-configuration.git
 
@@ -103,7 +103,28 @@ python3 init_rime.py
 
 #### 移动平台
 
+##### 通用
+
 将仓库 `Rime/Common` 及 `Rime/<平台类型>` 文件夹内容复制到 Rime 用户文件夹中，重新部署即可。
+
+##### 仓 (Hamster)
+
+前提条件：
+
+- 仓中启用 iCloud
+- 联网的 Mac
+
+使用方法：
+
+```shell
+# 在 Mac 上克隆当前项目
+git clone https://github.com/WithdewHua/rime-configuration.git
+
+# 复制 rime 配置文件到仓的 iCloud 目录中
+python3 init_rime.py --os ios
+
+# 确认 iCloud 文件同步至手机后，进入仓中重新部署即可
+```
 
 ### 更多
 
