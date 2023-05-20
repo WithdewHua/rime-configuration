@@ -80,6 +80,7 @@ engine:
     - simplifier@traditionalize              # 简繁切换
     - lua_filter@reduce_english_filter       # 降低部分英语单词在候选项的位置
     - lua_filter@is_in_user_dict             # 判断是否为用户词
+    - lua_filter@autocap_filter              # 英文大写转换
     - lua_filter@insert_space_between_words  # 英文词前后插入空格
     - uniquifier                             # 去重
 
