@@ -7,7 +7,7 @@ patch:
   # 水平排列
   style/horizontal: false
   # 候选词字体
-  style/font_face: "LXGW WenKai, HanaMinA, HanaMinB"
+  style/font_face: "LXGW WenKai, NazonoMincho, NazonoMincho+"
 
 
   preset_color_schemes:
