@@ -132,11 +132,17 @@ python3 init_rime.py --os ios
 
 ### 感谢
 
+#### Rime
+
 - [rime](https://github.com/rime/home)
 - [ssnhd/rime](https://github.com/ssnhd/rime)
 - [iDvel/rime-ice](https://github.com/iDvel/rime-ice)
 - [scomper/Rime](https://github.com/scomper/rime)
 - [rime-melt](https://github.com/tumuyan/rime-melt)
 - [felixonmars/fcitx5-pinyin-zhwiki](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
+
+#### 字体
+
 - [霞鹜文楷](https://github.com/lxgw/LxgwWenKai)
 - [花园明朝](http://fonts.jp/hanazono/)
+- [謎乃明朝](https://github.com/ge9/NazonoMincho)
