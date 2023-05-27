@@ -4,15 +4,17 @@ local function autocap_filter(input, env)
     for cand in input:iter() do
         local text = cand.text
         local context_input = env.engine.context.input
-        if (string.find(text, "^%l%l.*") and string.find(context_input, "^%u%u.*")) then
-            if (string.len(text) == 2) then
-                yield(Candidate("cap", 0, 2, context_input , "+" ))
+        -- 输入编码首字母大写且候选为字母开头
+        if context_input:find("^%u.*") and text:find("^%a.*") then
+            -- 输入编码前两个字母均大写，则转换候选为全词大写
+            if context_input:find("^%u%u.*") then
+                text = text:upper()
+            -- 输入编码仅首字母大写，则转换候选为首字母大写
             else
-                yield(Candidate("cap", 0, string.len(context_input), string.upper(text) , "+" .. string.sub(cand.comment, 2)))
+                text = text:sub(1, 1):upper() .. text:sub(2)
             end
-        elseif (string.find(text, "^%l+$") and string.find(context_input, "^%u+")) then
-            local suffix = string.sub(text, string.len(context_input) + 1)
-            yield(Candidate("cap", 0, string.len(context_input), context_input .. suffix , "+" .. suffix))
+            -- 构造候选
+            yield(Candidate(cand.type, 0, #context_input, text, cand.comment))
         else
             yield(cand)
         end
