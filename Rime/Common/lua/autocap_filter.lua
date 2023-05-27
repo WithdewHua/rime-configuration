@@ -4,8 +4,8 @@ local function autocap_filter(input, env)
     for cand in input:iter() do
         local text = cand.text
         local context_input = env.engine.context.input
-        -- 输入编码首字母大写且候选为字母开头
-        if context_input:find("^%u.*") and text:find("^%a.*") then
+        -- 输入编码首字母大写且候选为小写单词
+        if context_input:find("^%u+") and text:find("^%l+") then
             -- 输入编码前两个字母均大写，则转换候选为全词大写
             if context_input:find("^%u%u.*") then
                 text = text:upper()
