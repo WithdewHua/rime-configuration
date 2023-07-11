@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-06-06"
+version: "2023-06-29"
 sort: by_weight
 ...
 # +_+
@@ -3249,7 +3249,7 @@ chevy	chevy
 chew	chew
 Cheyenne	Cheyenne
 # chf	chf
-chi	chi
+# chi	chi
 Chiang	Chiang
 chic	chic
 chicago	chicago
@@ -6180,7 +6180,7 @@ elsewhere	elsewhere
 Elton	Elton
 elvis	elvis
 # em	em
-emacs	emacs
+Emacs	Emacs
 email	email
 emailed	emailed
 emails	emails
@@ -18647,7 +18647,7 @@ tell	tell
 teller	teller
 telling	telling
 tells	tells
-telnet	telnet
+Telnet	Telnet
 Telstra	Telstra
 # tem	tem
 temp	temp
@@ -18854,7 +18854,7 @@ Thompson	Thompson
 Thomson	Thomson
 thong	thong
 thongs	thongs
-# thor	thor
+Thor	Thor
 thorn	thorn
 Thornton	Thornton
 thorough	thorough
@@ -19098,7 +19098,6 @@ topology	topology
 topped	topped
 # topps	topps
 tops	tops
-Tor	Tor
 tor	tor
 torah	torah
 torch	torch
@@ -20863,7 +20862,7 @@ Xbox	Xbox
 # xd	xd
 # xda	xda
 # xe	xe
-# xemacs	xemacs
+XEmacs	XEmacs
 Xenical	Xenical
 Xeon	Xeon
 xerox	xerox
