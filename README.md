@@ -67,7 +67,6 @@ Rime
 | `v_mode_filter` | 符号输入（V 模式），单字符优先 |
 | `rime_lua_select_character` | 以词定字 |
 | `reduce_english_filter` | 用于降低部分英语单词的权重 |
-| `long_word_filter` | 长句优先 |
 | `is_in_user_dict` | 候选词 comment 中增加 * 标识用户词 |
 | `insert_space_between_words` | 候选词中英文间增加空格 |
 | `number_translator` | 对输入的数字进行大写转换 |
