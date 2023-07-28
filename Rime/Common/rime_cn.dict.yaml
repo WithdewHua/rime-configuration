@@ -1,6 +1,6 @@
 ---
 name: rime_cn
-version: "2023-04-16"
+version: "2023-07-29"
 import_tables:
   - dictionary/cn_dicts/rime-ice/8105    # rime-ice 8105 单字表
   - dictionary/cn_dicts/rime-ice/41448    # rime-ice 41448 大字表
