@@ -1,2 +1,4 @@
 patch:
+  speller/algebra:
+    __include: melt_eng.schema.yaml:/algebra_double_pinyin
   translator/dictionary: rime_en
