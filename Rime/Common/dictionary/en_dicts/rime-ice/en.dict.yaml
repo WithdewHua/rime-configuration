@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-10-30"
+version: "2024-01-31"
 sort: by_weight
 ...
 # +_+
@@ -6551,6 +6551,7 @@ estrogen	estrogen
 # et	et
 eta	eta
 etc	etc
+etc.	etc.
 eternal	eternal
 eternity	eternity
 Ethan	Ethan
@@ -11060,7 +11061,7 @@ logic	logic
 logical	logical
 login	login
 logistics	logistics
-logitech	logitech
+Logitech	Logitech
 logo	logo
 logon	logon
 logos	logos
@@ -12927,6 +12928,7 @@ observing	observing
 obsessed	obsessed
 obsession	obsession
 obsolete	obsolete
+obsidian	obsidian
 obstacle	obstacle
 obstacles	obstacles
 obstetrics	obstetrics
@@ -14335,7 +14337,7 @@ posterior	posterior
 posters	posters
 postfix	postfix
 postgraduate	postgraduate
-postgresql	postgresql
+PostgreSQL	PostgreSQL
 posting	posting
 postings	postings
 postman	postman
@@ -19855,7 +19857,7 @@ utterly	utterly
 # uv	uv
 # uw	uw
 # ux	ux
-uzbekistan	uzbekistan
+Uzbekistan	Uzbekistan
 # v	v
 # va	va
 vac	vac
@@ -20602,7 +20604,7 @@ wight	wight
 wigs	wigs
 wiki	wiki
 Wikimedia	Wikimedia
-wikipedia	wikipedia
+Wikipedia	Wikipedia
 # wil	wil
 Wilcox	Wilcox
 wild	wild
@@ -20723,7 +20725,7 @@ Wolverhampton	Wolverhampton
 wolves	wolves
 woman	woman
 women	women
-womens	womens
+women's	women's
 won	won
 wonder	wonder
 wondered	wondered
