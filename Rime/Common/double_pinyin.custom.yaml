@@ -20,3 +20,7 @@ patch:
 
   # melt_eng 翻译器
   melt_eng/dictionary: rime_en
+
+  # 部件拆字
+  radical_reverse_lookup/dictionary: rime_cn
+  

@@ -5,6 +5,8 @@ import requests
 import yaml
 
 
+local_path_prefix = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+
 # 从 yaml 文件中读取文件列表
 with open('upstream_repo.yaml', 'r') as f:
     file_list = yaml.safe_load(f)
@@ -27,8 +29,8 @@ for item in file_list:
 
         # 获取文件内容并保存到本地文件
         if response.status_code == 200:
-            print(f"Downloaded {url} to {file['local_path']}")
-            with open(file['local_path'], 'wb') as f:
+            print(f"Downloaded {url} to {os.path.join(local_path_prefix, file['local_path'])}")
+            with open(os.path.join(local_path_prefix, file['local_path']), 'wb') as f:
                 f.write(response.content)
         else:
             print(f"Fail to download {url}")
