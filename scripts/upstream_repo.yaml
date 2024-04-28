@@ -1,0 +1,23 @@
+- owner: iDvel
+  repo: rime-ice
+  branch: main
+  files:
+    - path: opencc/emoji.json
+      local_path: Rime/Common/opencc/emoji.json
+    - path: opencc/emoji.txt
+      local_path: Rime/Common/opencc/emoji.txt
+    - path: opencc/others.txt
+      local_path: Rime/Common/opencc/others.txt
+    - path: en_dicts/en.dict.yaml
+      local_path: Rime/Common/dictionary/en_dicts/rime-ice/en.dict.yaml
+    - path: cn_dicts/8105.dict.yaml
+      local_path: Rime/Common/dictionary/cn_dicts/rime-ice/8105.dict.yaml
+    - path: cn_dicts/41448.dict.yaml
+      local_path: Rime/Common/dictionary/cn_dicts/rime-ice/41448.dict.yaml
+    - path: cn_dicts/base.dict.yaml
+      local_path: Rime/Common/dictionary/cn_dicts/rime-ice/base.dict.yaml
+    - path: cn_dicts/ext.dict.yaml
+      local_path: Rime/Common/dictionary/cn_dicts/rime-ice/ext.dict.yaml
+    - path: cn_dicts/tencent.dict.yaml
+      local_path: Rime/Common/dictionary/cn_dicts/rime-ice/tencent.dict.yaml
+

@@ -51,7 +51,7 @@ Rime
 
 #### 输入扩展功能
 
-- 拼字：[两分输入法方案](http://cheonhyeong.com/Simplified/download.html) (`L` 触发)
+- 反查：[radical-pinyin](https://github.com/mirtlecn/rime-radical-pinyin) (`L` 触发)
 - Emoji 输入: [雾凇拼音 Emoji 方案](https://github.com/iDvel/rime-ice/blob/main/opencc/emoji.json)
 - 符号输入：基于 [scomper/Rime](https://github.com/scomper/rime) 自调整的符号输入 (`V` 触发)
 - [以词定字](https://github.com/BlindingDark/rime-lua-select-character)：快捷键 `[ ]`
@@ -138,6 +138,7 @@ python3 init_rime.py --os ios
 - [iDvel/rime-ice](https://github.com/iDvel/rime-ice)
 - [scomper/Rime](https://github.com/scomper/rime)
 - [rime-melt](https://github.com/tumuyan/rime-melt)
+- [rime-radical-pinyin](https://github.com/mirtlecn/rime-radical-pinyin)
 - [felixonmars/fcitx5-pinyin-zhwiki](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
 
 #### 字体
