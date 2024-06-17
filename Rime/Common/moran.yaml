@@ -12,9 +12,10 @@ algebra:
   # 用例：手機上的模糊鍵盤映射
   user_force_top:
   user_force_bottom:
-    # __append:
-    #   __patch:
-    #     - moran_defs:/keyboard19
+    __append:
+      __patch:
+        - moran_defs:/full_pinyin_to_double_pinyin
+        - moran_defs:/cn_en_hybid
 
   # 用戶自定義演算式，這部分演算式會注入到類整句方案的開頭和結尾，不包括字詞模式
   # 用例：實現模糊音、將自然碼雙拼映射爲別的雙拼方案等
