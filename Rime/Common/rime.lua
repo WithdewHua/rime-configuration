@@ -7,8 +7,6 @@ date_translator = require("datetime")
 select_character = require("rime_lua_select_character")
 -- 降低部分英语单词在候选项的位置
 reduce_english_filter = require("reduce_english_filter")
--- v 模式，单个字符优先
-v_filter = require("v_mode_filter")
 -- Unicode 输入
 unicode = require("unicode")
 -- 这是用户词吗？
