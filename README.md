@@ -64,7 +64,6 @@ Rime
 | --- | --- |
 | `datetime` | 用于输入日期、星期、时间 |
 | `unicode` | 用于输入 unicode |
-| `v_mode_filter` | 符号输入（V 模式），单字符优先 |
 | `rime_lua_select_character` | 以词定字 |
 | `reduce_english_filter` | 用于降低部分英语单词的权重 |
 | `is_in_user_dict` | 候选词 comment 中增加 * 标识用户词 |
