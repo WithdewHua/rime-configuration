@@ -3,7 +3,8 @@
 Thumbs.db
 
 # Rime
-build/
+build/*
+!build/kMandarin.reverse.bin
 custom_phrase.txt
 *.userdb/
 *.userdb.txt
