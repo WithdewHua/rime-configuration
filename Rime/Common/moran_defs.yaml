@@ -58,3 +58,43 @@ fly:
   xq_xo:
     __append:
       - derive/xq;/xo;/
+
+# 中英混输
+# https://github.com/iDvel/rime-ice/issues/230
+cn_en_hybid:
+  __append:
+    - xform/"//
+
+# 改写全拼词库以适配自然码双拼
+# author: WithdewHua
+full_pinyin_to_double_pinyin:
+  __append:
+    - derive/^([jqxy])u$/$1v/
+    - derive/^([aoe])([ioun])$/$1$1$2/
+    - xform/^([aoe])(ng)?$/$1$1$2/
+    - xform/^(.)iu$/$1Ⓠ/
+    - xform/^(.)[iu]a$/$1Ⓦ/
+    - xform/^(.)[uv]an$/$1Ⓡ/
+    - xform/^(.)[uv]e$/$1Ⓣ/
+    - xform/^(.)(ing|uai)$/$1Ⓨ/
+    - xform/^sh(.+)$/Ⓤ$1/
+    - xform/^ch(.+)$/Ⓘ$1/
+    - xform/^zh(.+)$/Ⓥ$1/
+    - xform/^(.+)uo$/$1Ⓞ/
+    - xform/^(.+)[uv]n$/$1Ⓟ/
+    - xform/^(.+)i?ong$/$1Ⓢ/
+    - xform/^(.+)[iu]ang$/$1Ⓓ/
+    - xform/^(.+)en$/$1Ⓕ/
+    - xform/^(.+)eng$/$1Ⓖ/
+    - xform/^(.+)ang$/$1Ⓗ/
+    - xform/^(.+)ian$/$1Ⓜ/
+    - xform/^(.+)an$/$1Ⓙ/
+    - xform/^(.)iao$/$1Ⓒ/
+    - xform/^(.+)ao$/$1Ⓚ/
+    - xform/^(.+)ai$/$1Ⓛ/
+    - xform/^(.+)ei$/$1Ⓩ/
+    - xform/^(.+)ie$/$1Ⓧ/
+    - xform/^(.+)ui$/$1Ⓥ/
+    - xform/^(.+)ou$/$1Ⓑ/
+    - xform/^(.)in$/$1Ⓝ/
+    - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/

@@ -3,55 +3,62 @@
 # moran: https://github.com/ksqsf/rime-moran
 # 根据魔然方案进行修改
 # 修改：WithdewHua <i@10101.io>
+# repo: https://github.com/withdewhua/rime-configuration
 
 schema:
   schema_id: moran
-  name: 魔然
-  version: "20240617"
+  name: 魔然自然码
+  version: "20240618"
   author:
     - 自然碼發明人：周志農
     - 方案製作：ksqsf
+    - 修改：WithdewHua
   description: |
     爲傳承字設計的自然碼及輔助碼智能整句輸入方案。
   dependencies:
     - moran_fixed
-    - moran_sentence
-    - melt_eng               # 英文输入，作为次翻译器挂载到拼音方案
-    - radical_pinyin         # 部件拆字，作为反查挂载到拼音方案
+    - moran_charset
+    - melt_eng                                               # 英文输入，作为次翻译器挂载到拼音方案
+    - radical_pinyin                                         # 部件拆字，作为反查挂载到拼音方案
 
 switches:
   - name: ascii_mode
-    states: [ 中文, 西文 ]
+    states: [ 中, A ]
+    reset: 0
   - name: full_shape
     states: [ 半角, 全角 ]
+    reset: 0
   - name: traditionalization
-    states: [ 汉字, 漢字 ]
+    states: [ 简, 繁 ]
+    reset: 0
   - name: ascii_punct
-    states: [ 。，, ．， ]
+    states: [ ¥, $ ]
+    reset: 0
   - name: extended_charset
-    states: [ 通用, 增廣 ]
+    states: [ 通用, 增广 ]
   - name: inflexible
-    states: [ 動詞, 固詞 ] # 「固詞」表示「固頂詞」
-    # 默認情況下，輸入 4 碼時，會禁止碼表輸出（「動詞」模式）。
-    # 這是因爲碼表最大碼長爲 4，可能會產生較低頻的多字詞，覆蓋過用戶自造的常用詞語。
-    # 當固詞模式啓動後，輸入 4 碼時會優先輸出碼表中的二字詞，這些輸出帶有「⚡️」標記。
+    states: [ 动, 固 ] 
   - name: emoji
-    states: [ 🈚, 🈶 ]
+    states: [ 💀, 😄 ]
+    reset: 1
   - name: chaifen
     states: [ 不拆, 扌斥 ]
+    reset: 0
   - name: pinyinhint
     states: [ 🔇, 🔊 ]
+    reset: 0
   - name: unicode_comment
-    states: [ U關, U開 ]
+    states: [ U 关, U 开 ]
+    reset: 0
   - options: [ std_opencc,  std_tw, std_hk, std_dzing ]
     reset: 0
-    states: [ 通, 臺, 港, 寍 ]
+    states: [ 標準, 臺灣, 香港, 叔寍 ]
 
 engine:
   processors:
     - key_binder
     - lua_processor@*moran_semicolon_processor
-    - lua_processor@*select_character                        # 以词定字
+    - lua_processor@select_character                         # 以词定字
     - ascii_composer
     - recognizer
     - speller
@@ -73,9 +80,9 @@ engine:
     - table_translator@melt_eng                              # 英文输入
     - table_translator@radical_lookup                        # 拆字反查
     - lua_translator@*moran_express_translator@with_reorder  # 翻譯器
-    - lua_translator@*date_translator                        # 时间、日期、星期
-    - lua_translator@*unicode                                # Unicode
-    - lua_translator@*number_translator                      # 数字大写
+    - lua_translator@date_translator                         # 时间、日期、星期
+    - lua_translator@unicode                                 # Unicode
+    - lua_translator@number_translator                       # 数字大写
     - history_translator@quick_repeat
   filters:
     - reverse_lookup_filter@radical_reverse_lookup           # 拆字滤镜
@@ -83,10 +90,10 @@ engine:
     - lua_filter@*moran_reorder_filter
     - lua_filter@*moran_quick_code_hint
     - lua_filter@*moran_aux_hint
-    - lua_filter@*reduce_english_filter                      # 降低部分英语单词在候选项的位置
-    - lua_filter@*is_in_user_dict                            # 判断是否为用户词
-    - lua_filter@*autocap_filter                             # 英文大写转换
-    - lua_filter@*insert_space_between_words                 # 英文词前后插入空格
+    - lua_filter@reduce_english_filter                       # 降低部分英语单词在候选项的位置
+    - lua_filter@is_in_user_dict                             # 判断是否为用户词
+    - lua_filter@autocap_filter                              # 英文大写转换
+    - lua_filter@insert_space_between_words                  # 英文词前后插入空格
     - simplifier@emoji
     - simplifier@chaifen
     - simplifier@pinyinhint
@@ -94,10 +101,12 @@ engine:
     - simplifier@std_tw
     - simplifier@std_dzing
     - simplifier@traditionalize                              # 简繁转换
+    - lua_filter@*moran_charset_comment_filter               # Unicode 區位提示
+    - lua_filter@*moran_unicode_display_filter               # Unicode 編碼提示
     - uniquifier                                             # 去重
 
 speller:
-  alphabet: abcdefghijklmnopqrstuvwxyz/;
+  alphabet: abcdefghijklmnopqrstuvwxyzZYXWVUTSRQPONMLKJIHGFEDCBA/;
   delimiter: " '"
   auto_select: true
   auto_select_pattern: ^;(\w+|;)
@@ -142,7 +151,7 @@ recognizer:
 translator:    
   dictionary: rime_cn
   prism: moran
-  initial_quality: 5
+  initial_quality: 1.2
   max_homophones: 7
   spelling_hints: 3
   contextual_suggestions: true
@@ -152,7 +161,7 @@ translator:
 # 固頂輸入模式設置，在 top_translator 中被調用
 fixed:         
   dictionary: moran_fixed_simp
-  initial_quality: 100
+  initial_quality: 2
   enable_completion: false
   enable_sentence: false
   enable_user_dict: false
@@ -161,7 +170,7 @@ fixed:
 
 # 次翻译器，英文
 melt_eng:
-  dictionary: melt_eng                                       # 挂载词库 melt_eng.dict.yaml
+  dictionary: rime_en                                        # 挂载词库 rime_en.dict.yaml
   enable_sentence: false                                     # 禁止造句
   enable_user_dict: false                                    # 禁用用户词典
   initial_quality: 1.1                                       # 初始权重
@@ -175,7 +184,7 @@ custom_phrase:
   db_class: stabledb
   enable_completion: false                                   # 补全提示
   enable_sentence: false                                     # 禁止造句
-  initial_quality: 1000                                      # custom_phrase 的权重应该其他 dict 大
+  initial_quality: 99                                        # custom_phrase 的权重应该其他 dict 大
 
 # Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
 date_translator:
@@ -251,8 +260,9 @@ radical_reverse_lookup:
   tags: [ radical_lookup ]
   # dictionary 为拼音标注来源。目前是显示本方案词库的注音，可去部件拆字方案下载更全的、带声调的、已编译好的词典
   # https://github.com/mirtlecn/rime-radical-pinyin?tab=readme-ov-file#%E5%8F%8D%E6%9F%A5%E5%B8%A6%E5%A3%B0%E8%B0%83%E6%B3%A8%E9%9F%B3
-  dictionary: rime_ice
-  # comment_format:     # 自定义 comment，例如在左右加上括号
+  dictionary: rime_cn
+  # 自定义 comment，例如在左右加上括号
+  # comment_format:     
   #  - xform/^/(/
   #  - xform/$/)/
 
@@ -316,9 +326,9 @@ moran:
   # 當一個字具有簡碼時，打其全碼（不論是 yyxx 還是 yyxxo）都會導致該
   # 字讓出首位，而被推遲到後位。
   ijrq:
-    enable: true       # 是否啓用出簡讓全？
-    #defer: 5          # 延遲多少位？若不設置该项，或值小於等於 0，則推遲到第二頁的首選
-    show_hint: true    # 若讓全，則提示簡碼打法
+    enable: true                                             # 是否啓用出簡讓全？
+    #defer: 5                                                # 延遲多少位？若不設置该项，或值小於等於 0，則推遲到第二頁的首選
+    show_hint: true                                          # 若讓全，則提示簡碼打法
 
   # 單字輔助碼提示
   # 注：會顯示出所有可能的輔助碼
@@ -326,11 +336,11 @@ moran:
 
   # 簡快碼提示（包括字和詞）
   # 例如 輸入 yy te er 英特爾 會提示「⚡yte」，即使用 yte 可以打出這個詞
-  enable_quick_code_hint: false
+  enable_quick_code_hint: true
 
   # 輸入四碼時，如果簡碼碼表中含有對應條目，則放置在第二選項。
-  show_chars_anyway: false   # 是否輸出簡碼碼表單字，例：輸入 jwrg 時，次選爲「佳」
-  show_words_anyway: true   # 是否輸出簡碼碼表詞語，例：輸入 lmsd 時，次選爲「兩面三刀」
+  show_chars_anyway: true                                    # 是否輸出簡碼碼表單字，例：輸入 jwrg 時，次選爲「佳」
+  show_words_anyway: true                                    # 是否輸出簡碼碼表詞語，例：輸入 lmsd 時，次選爲「兩面三刀」
 
 # 默認啓用語言模型
 __include: moran:/octagram/enable_for_sentence

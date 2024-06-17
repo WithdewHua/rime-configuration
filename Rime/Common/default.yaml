@@ -3,7 +3,7 @@
 #
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2024-06-17'
+config_version: '2024-06-18'
 
 
 # 方案列表
@@ -28,6 +28,8 @@ switcher:
     - ascii_punct
     - traditionalization
     - emoji
+    - extended_charset
+    - inflexible
   fold_options: true            # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
   abbreviate_options: true      # 折叠时是否缩写选项
   option_list_separator: ' / '  # 折叠时的选项分隔符

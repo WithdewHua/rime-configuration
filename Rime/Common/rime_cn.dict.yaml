@@ -2,11 +2,11 @@
 name: rime_cn
 version: "2023-07-29"
 import_tables:
-  - dictionary/cn_dicts/moran/moran.chars                 
-  - dictionary/cn_dicts/moran/moran.base
-  - dictionary/cn_dicts/moran/moran.words
-  - dictionary/cn_dicts/rime-ice/8105            # rime-ice 8105 单字表
-  - dictionary/cn_dicts/rime-ice/41448           # rime-ice 41448 大字表
+  - dictionary/cn_dicts/moran/moran.chars        # moran 单字码表       
+  - dictionary/cn_dicts/moran/moran.base         # moran 基础词
+  - dictionary/cn_dicts/moran/moran.words        # moran 基础词扩充
+  # - dictionary/cn_dicts/rime-ice/8105            # rime-ice 8105 单字表
+  # - dictionary/cn_dicts/rime-ice/41448           # rime-ice 41448 大字表
   - dictionary/cn_dicts/rime-ice/base            # rime-ice 基础词库
   - dictionary/cn_dicts/rime-ice/ext             # rime-ice 扩展词库
   - dictionary/multi_lang_dicts/cn_en
