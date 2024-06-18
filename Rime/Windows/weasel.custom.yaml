@@ -2,7 +2,9 @@ patch:
   "style/color_scheme": WeChat-keyboard
   "style/display_tray_icon": true
   "style/horizontal": false
-
+  "style/font_face": "LXGW Wenkai"
+  
+  # custom themes
   "preset_color_schemes/WeChat-keyboard":
     name: WeChat-keyboard                                  # 配色取自微信键盘
     author: zsakvo
