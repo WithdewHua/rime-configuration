@@ -180,7 +180,7 @@ melt_eng:
 # 自定義短語
 custom_phrase: 
   dictionary: ""
-  user_dict: custom_phrase_double
+  user_dict: custom_phrase_double_pinyin
   db_class: stabledb
   enable_completion: false                                   # 补全提示
   enable_sentence: false                                     # 禁止造句
