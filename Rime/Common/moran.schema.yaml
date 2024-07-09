@@ -8,7 +8,7 @@
 schema:
   schema_id: moran
   name: 魔然自然码
-  version: "20240618"
+  version: "20240709"
   author:
     - 自然碼發明人：周志農
     - 方案製作：ksqsf
@@ -139,7 +139,7 @@ recognizer:
   import_preset: default  
   patterns:  # 再增加方案专有的：
     punct: "^V([0-9]|10|[A-Za-z]+)$"                         # 响应 symbols.yaml 的 symbols，大写 V 触发
-    radical_lookup: "^L[a-z]+$"                              # 响应反查
+    radical_lookup: "^L[a-z]{2,}$"                           # 响应反查
     unicode: "^U[a-f0-9]+"                                   # 响应 Unicode
     number: "^R[0-9]+[.]?[0-9]*"                             # 响应 number_translator
 
@@ -339,7 +339,7 @@ moran:
   enable_quick_code_hint: true
 
   # 輸入四碼時，如果簡碼碼表中含有對應條目，則放置在第二選項。
-  show_chars_anyway: true                                    # 是否輸出簡碼碼表單字，例：輸入 jwrg 時，次選爲「佳」
+  show_chars_anyway: false                                   # 是否輸出簡碼碼表單字，例：輸入 jwrg 時，次選爲「佳」
   show_words_anyway: true                                    # 是否輸出簡碼碼表詞語，例：輸入 lmsd 時，次選爲「兩面三刀」
 
 # 默認啓用語言模型

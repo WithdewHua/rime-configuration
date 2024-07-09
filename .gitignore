@@ -12,7 +12,8 @@ user.yaml
 installation.yaml
 
 # IDE
-.vscode
+.vscode/*
+!.vscode/settings.json
 
 .ttxfolder
 *.hidden

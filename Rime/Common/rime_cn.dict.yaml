@@ -1,6 +1,6 @@
 ---
 name: rime_cn
-version: "2023-07-29"
+version: "2024-07-09"
 import_tables:
   - dictionary/cn_dicts/moran/moran.chars        # moran 单字码表       
   - dictionary/cn_dicts/moran/moran.base         # moran 基础词
@@ -12,6 +12,7 @@ import_tables:
   - dictionary/multi_lang_dicts/cn_en
   - dictionary/cn_dicts/rime-ice/tencent         # rime-ice tencent AI 词库
   - dictionary/cn_dicts/zhwiki                   # fcitx5-pinyin-zhwiki
+  - dictionary/cn_dicts/moegirl                  # outloudvi/mw2fcitx
 ...
 
 # 大写字母
