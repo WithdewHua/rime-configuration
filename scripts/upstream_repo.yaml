@@ -47,3 +47,13 @@
     #     - moran_charset.dict.yaml
     #     - moran_fixed.schema.yaml
     #     - moran_fixed_simp.dict.yaml
+
+- owner: outloudvi
+  repo: mw2fcitx
+  branch: release  # download from release
+  downloads:
+    - path: .
+      local_path: Rime/Common/dictionary/cn_dicts/
+      files:
+        - moegirl.dict.yaml
+        

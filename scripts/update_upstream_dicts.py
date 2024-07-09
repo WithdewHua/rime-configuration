@@ -6,6 +6,8 @@ import yaml
 
 
 local_path_prefix = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+repo_url = 'https://github.com/{}/{}/raw/{}/{}'
+release_url = 'https://github.com/{}/{}/releases/latest/download/{}'
 
 # 从 yaml 文件中读取文件列表
 with open('upstream_repo.yaml', 'r') as f:
@@ -26,11 +28,10 @@ for item in file_list:
         files = download["files"]
         for file in files:
             # 构造 请求 URL
-            if remote_path != ".":
-                url = f'https://github.com/{owner}/{repo}/raw/{branch}/{remote_path}/{file}'
+            if branch.lower() == "release":
+                url = release_url.format(owner, repo, file)
             else:
-                url = f'https://github.com/{owner}/{repo}/raw/{branch}/{file}'
-        
+                url = repo_url.format(owner, repo, branch, f"{remote_path}/{file}" if remote_path != "." else file)
             # 发送 请求
             response = requests.get(url)
 
