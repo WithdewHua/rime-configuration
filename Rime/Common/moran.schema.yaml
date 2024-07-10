@@ -106,7 +106,8 @@ engine:
     - uniquifier                                             # 去重
 
 speller:
-  alphabet: abcdefghijklmnopqrstuvwxyzZYXWVUTSRQPONMLKJIHGFEDCBA;
+  alphabet: abcdefghijklmnopqrstuvwxyzZYXWVUTSRQPONMLKJIHGFEDCBA/;
+  initials: abcdefghijklmnopqrstuvwxyzZYXWVUTSRQPONMLKJIHGFEDCBA;
   delimiter: " '"
   auto_select: true
   auto_select_pattern: ^;(\w+|;)
