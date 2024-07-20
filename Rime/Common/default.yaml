@@ -8,7 +8,6 @@ config_version: '2024-06-18'
 
 # 方案列表
 schema_list:
-  - schema: moran
   - schema: double_pinyin
 
 

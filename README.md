@@ -22,13 +22,6 @@ rime
 │  ├── lua
 │  ├── melt_eng.custom.yaml
 │  ├── melt_eng.schema.yaml
-│  ├── moran.schema.yaml
-│  ├── moran.yaml
-│  ├── moran_charset.dict.yaml
-│  ├── moran_charset.schema.yaml
-│  ├── moran_defs.yaml
-│  ├── moran_fixed.schema.yaml
-│  ├── moran_fixed_simp.dict.yaml
 │  ├── opencc
 │  ├── punctuation.yaml
 │  ├── radical_pinyin.custom.yaml
@@ -58,8 +51,8 @@ rime
 #### 输入方案
 
 - 自然码双拼
-  - [魔然简体词库版](https://github.com/ksqsf/rime-moran)
   - [雾凇拼音简体词库版](https://github.com/iDvel/rime-ice/blob/main/double_pinyin.schema.yaml)
+  - [魔然辅筛](https://github.com/ksqsf/rime-moran)
   - [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入方案
 
 #### 输入扩展功能
@@ -87,10 +80,6 @@ rime
 
 #### 词库
 
-- [魔然简体词库](https://github.com/ksqsf/rime-moran)
-  - `moran.chars` 单字码表
-  - `moran.base` 基础词
-  - `moran.words` 基础词库扩充  
 - [雾凇拼音词库](https://github.com/iDvel/rime-ice)
   - `8105` 字表
   - `41448` 字表
