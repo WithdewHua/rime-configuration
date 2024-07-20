@@ -37,6 +37,7 @@ function Module.init(env)
    env.aux_table = moran.load_zrmdb()
    env.translator = Component.Translator(env.engine, "", "script_translator@translator")
    env.prefetch_threshold = env.engine.schema.config:get_int("moran/prefetch") or -1
+
    local aux_length = nil
 
    -- 在自帶的 OnSelect 之前生效，從而獲取到 selected candidate
