@@ -19,7 +19,7 @@
         - tencent.dict.yaml
 - owner: ksqsf
   repo: rime-moran
-  branch: master
+  branch: main
   downloads:
     - path: lua/
       local_path: Rime/Common/lua
