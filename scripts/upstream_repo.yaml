@@ -19,34 +19,15 @@
         - tencent.dict.yaml
 - owner: ksqsf
   repo: rime-moran
-  branch: 2.0.1
+  branch: master
   downloads:
-    - path: opencc/
-      local_path: Rime/Common/opencc
+    - path: lua/
+      local_path: Rime/Common/lua
       files:
-        - moran_chaifen.json
-        - moran_chaifen.txt
-        - moran_dzing_variants.txt
-        - moran_dzing.json
-        - moran_pinyinhint.json
-        - moran_pinyinhint.txt
-        - moran_t2s_fix.txt
-        - moran_t2s.json
-        - moran_TSCharacters.txt
-        - moran_TSPhrases.ocd2
-    # - path: .
-    #   local_path: Rime/Common/dictionary/cn_dicts/moran
-    #   files:
-    #     - moran.base.dict.yaml
-    #     - moran.chars.dict.yaml
-    #     - moran.words.dict.yaml
-    # - path: .
-    #   local_path: Rime/Common/
-    #   files:
-    #     - moran_charset.schema.yaml
-    #     - moran_charset.dict.yaml
-    #     - moran_fixed.schema.yaml
-    #     - moran_fixed_simp.dict.yaml
+        - moran_aux_translator.lua
+        - moran_fix_filter.lua
+        - moran.lua
+        - zrmdb.txt
 
 - owner: outloudvi
   repo: mw2fcitx
