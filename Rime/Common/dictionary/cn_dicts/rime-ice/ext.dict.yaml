@@ -16,7 +16,7 @@
 # - 简化字八股文 https://github.com/rime/rime-essay-simp
 ---
 name: ext
-version: "2024-06-10"
+version: "2024-07-28"
 sort: by_weight
 ...
 # +_+
@@ -20065,7 +20065,6 @@ sort: by_weight
 不认同	bu ren tong	100
 不仁义的	bu ren yi de	100
 不忍远离	bu ren yuan li	100
-不认帐	bu ren zhang	100
 不认这个账	bu ren zhe ge zhang	100
 不认真履行职责	bu ren zhen lv xing zhi ze	100
 不忍直视	bu ren zhi shi	100
@@ -71526,7 +71525,6 @@ sort: by_weight
 反经合义	fan jing he yi	100
 范九利	fan jiu li	100
 犯酒瘾	fan jiu yin	100
-翻旧帐	fan jiu zhang	100
 翻卷子	fan juan zi	100
 反绝杀	fan jue sha	100
 翻开了新的一页	fan kai le xin de yi ye	100
@@ -101308,7 +101306,7 @@ sort: by_weight
 喝一瓶水	he yi ping shui	100
 喝一瓶饮料	he yi ping yin liao	100
 和以前一样	he yi qian yi yang	100
-何以笙萧默	he yi sheng xiao mo	100
+何以笙箫默	he yi sheng xiao mo	100
 和意同心	he yi tong xin	100
 何以为战	he yi wei zhan	100
 何意义	he yi yi	100
@@ -154687,6 +154685,7 @@ sort: by_weight
 罗志明	luo zhi ming	100
 罗致人才	luo zhi ren cai	100
 罗郅阳	luo zhi yang	100
+裸指针	luo zhi zhen	100
 罗致政	luo zhi zheng	100
 洛钟东应	luo zhong dong ying	100
 罗竹君	luo zhu jun	100
@@ -268822,6 +268821,7 @@ sort: by_weight
 写出了	xie chu le	100
 写出去	xie chu qu	100
 泻出去	xie chu qu	100
+写错成	xie cuo cheng	100
 写错成了	xie cuo cheng le	100
 写错啦	xie cuo la	100
 写错了呗	xie cuo le bei	100
@@ -310115,7 +310115,6 @@ sort: by_weight
 折臂三公	zhe bi san gong	100
 这笔手续费	zhe bi shou xu fei	100
 这逼样	zhe bi yang	100
-这笔帐	zhe bi zhang	100
 遮蔽罩	zhe bi zhao	100
 这逼装得	zhe bi zhuang de	100
 这边的	zhe bian de	100
