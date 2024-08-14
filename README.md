@@ -140,12 +140,14 @@ python3 init_rime.py --os ios
 #### Rime
 
 - [rime](https://github.com/rime/home)
+- [魔然](https://github.com/ksqsf/rime-moran)
 - [ssnhd/rime](https://github.com/ssnhd/rime)
 - [iDvel/rime-ice](https://github.com/iDvel/rime-ice)
 - [scomper/Rime](https://github.com/scomper/rime)
 - [rime-melt](https://github.com/tumuyan/rime-melt)
 - [rime-radical-pinyin](https://github.com/mirtlecn/rime-radical-pinyin)
 - [felixonmars/fcitx5-pinyin-zhwiki](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
+- [mw2fcitx](https://github.com/outloudvi/mw2fcitx/)
 
 #### 字体
 
