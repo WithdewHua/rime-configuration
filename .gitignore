@@ -3,7 +3,8 @@
 Thumbs.db
 
 # Rime
-build/
+build/*
+!build/kMandarin.reverse.bin
 custom_phrase.txt
 *.userdb/
 *.userdb.txt
@@ -11,7 +12,8 @@ user.yaml
 installation.yaml
 
 # IDE
-.vscode
+.vscode/*
+!.vscode/settings.json
 
 .ttxfolder
 *.hidden

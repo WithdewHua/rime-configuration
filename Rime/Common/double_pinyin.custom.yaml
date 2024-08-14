@@ -1,7 +1,7 @@
 patch:
   # 标点及特殊表情，引入 symbols.custom.yaml 文件，设定触发条件(V)
   punctuator:
-    import_preset: symbols.custom
+    import_preset: symbols
   recognizer/patterns/punct: "^V([0-9]|10|[A-Za-z]+)$"
 
   # 输入双拼码的时候不转化为全拼码
