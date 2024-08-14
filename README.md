@@ -5,32 +5,37 @@
 ### 文件说明
 
 ```shell
-Rime
+rime
 ├── Android
 │  ├── backgrounds
 │  ├── trime.yaml
 │  ├── 单静.trime.custom.yaml
 │  └── 单静.trime.yaml
 ├── Common
+│  ├── build
 │  ├── custom_phrase_double_pinyin.txt
-│  ├── default.custom.yaml
 │  ├── default.yaml
 │  ├── dictionary
 │  ├── double_pinyin.custom.yaml
 │  ├── double_pinyin.schema.yaml
-│  ├── liangfen.dict.yaml
-│  ├── liangfen.schema.yaml
+│  ├── key_bindings.yaml
 │  ├── lua
 │  ├── melt_eng.custom.yaml
 │  ├── melt_eng.schema.yaml
 │  ├── opencc
+│  ├── punctuation.yaml
+│  ├── radical_pinyin.custom.yaml
+│  ├── radical_pinyin.dict.yaml
+│  ├── radical_pinyin.schema.yaml
 │  ├── rime.lua
 │  ├── rime_cn.dict.yaml
 │  ├── rime_en.dict.yaml
-│  ├── symbols.custom.yaml
+│  ├── symbols.yaml
+│  ├── zh-hans-t-essay-bgc.gram
 │  └── zh-hans-t-essay-bgw.gram
 ├── Darwin
 │  └── squirrel.custom.yaml
+├── iOS
 ├── Linux
 └── Windows
    └── weasel.custom.yaml
@@ -47,6 +52,7 @@ Rime
 
 - 自然码双拼
   - [雾凇拼音简体词库版](https://github.com/iDvel/rime-ice/blob/main/double_pinyin.schema.yaml)
+  - [魔然辅筛](https://github.com/ksqsf/rime-moran)
   - [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入方案
 
 #### 输入扩展功能
@@ -64,13 +70,12 @@ Rime
 | --- | --- |
 | `datetime` | 用于输入日期、星期、时间 |
 | `unicode` | 用于输入 unicode |
-| `v_mode_filter` | 符号输入（V 模式），单字符优先 |
 | `rime_lua_select_character` | 以词定字 |
 | `reduce_english_filter` | 用于降低部分英语单词的权重 |
-| `is_in_user_dict` | 候选词 comment 中增加 * 标识用户词 |
 | `insert_space_between_words` | 候选词中英文间增加空格 |
 | `number_translator` | 对输入的数字进行大写转换 |
 | `autocap_filter` | 英文大写转换，首字符大写转换小写单词为首字母大写，前 2 个字符大写转换小写单词为全大写 |
+| `moran*` | [魔然](https://github.com/ksqsf/rime-moran) 方案相关 lua 脚本 |
 
 #### 词库
 
@@ -81,6 +86,7 @@ Rime
   - `ext` 扩展词库
   - `tencent` 腾讯词向量
 - [`zhwiki` 百万维基词库](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
+- [`moegirl` 维基词库](https://github.com/outloudvi/mw2fcitx/)
 - 自维护 `cn_en` 中英文混合词条
 
 ### 使用说明
@@ -134,12 +140,14 @@ python3 init_rime.py --os ios
 #### Rime
 
 - [rime](https://github.com/rime/home)
+- [魔然](https://github.com/ksqsf/rime-moran)
 - [ssnhd/rime](https://github.com/ssnhd/rime)
 - [iDvel/rime-ice](https://github.com/iDvel/rime-ice)
 - [scomper/Rime](https://github.com/scomper/rime)
 - [rime-melt](https://github.com/tumuyan/rime-melt)
 - [rime-radical-pinyin](https://github.com/mirtlecn/rime-radical-pinyin)
 - [felixonmars/fcitx5-pinyin-zhwiki](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
+- [mw2fcitx](https://github.com/outloudvi/mw2fcitx/)
 
 #### 字体
 
