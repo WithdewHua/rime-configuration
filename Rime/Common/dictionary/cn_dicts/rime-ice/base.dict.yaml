@@ -1911,10 +1911,11 @@
 # 「喜剧届、音乐届、体育届」→「喜剧界、音乐界、体育界」
 # 「全天侯」→「全天候」
 # 「夏侯敦」→「夏侯惇」
+# 「纨裤子弟」-->「纨绔子弟」
 #///
 ---
 name: base
-version: "2024-06-10"
+version: "2024-07-28"
 sort: by_weight
 ...
 # +_+
@@ -7375,7 +7376,7 @@ sort: by_weight
 傲游浏览器	ao you liu lan qi	112
 遨游世界	ao you shi jie	545
 遨游四海	ao you si hai	295
-遨游四海求其皇	ao you si hai qiu qi huang	1
+遨游四海求其凰	ao you si hai qiu qi huang	1
 遨游太空	ao you tai kong	2355
 遨游天下	ao you tian xia	400
 敖幼祥	ao you xiang	37
@@ -9150,7 +9151,7 @@ sort: by_weight
 拔丝楂糕	ba si zha gao	2
 罢讼	ba song	9999
 巴松	ba song	8
-巴松错	ba song cuo	2835
+巴松措	ba song cuo	2835
 八松乡	ba song xiang	3
 八艘	ba sou	8
 罢诉	ba su	9999
@@ -24264,6 +24265,7 @@ sort: by_weight
 避暑胜地	bi shu sheng di	6810
 鼻舒适片	bi shu shi pian	1
 必输无疑	bi shu wu yi	755
+必输性	bi shu xing	111
 笔刷	bi shua	1111
 避税	bi shui	28910
 碧水	bi shui	4037
@@ -38568,12 +38570,13 @@ sort: by_weight
 不眨眼	bu zha yan	1570
 布渣叶	bu zha ye	29
 卜宅卜邻	bu zhai bu lin	1
-布展	bu zhan	37150
-不占	bu zhan	31290
-不粘	bu zhan	15145
-不沾	bu zhan	14805
-不战	bu zhan	12135
-不展	bu zhan	1840
+不占	bu zhan	37150
+不沾	bu zhan	31290
+布展	bu zhan	15145
+不战	bu zhan	14805
+不粘	bu zhan	12135
+不站	bu zhan	1840
+不展	bu zhan	1830
 步战	bu zhan	1825
 不占白不占	bu zhan bai bu zhan	125
 不沾边	bu zhan bian	1725
@@ -63028,6 +63031,7 @@ sort: by_weight
 磁带录音机	ci dai lu yin ji	800
 磁带驱动器	ci dai qu dong qi	195
 次贷危机	ci dai wei ji	1
+此单	ci dan	111
 次单位	ci dan wei	120
 刺刀	ci dao	17460
 磁道	ci dao	16615
@@ -78948,6 +78952,7 @@ sort: by_weight
 倒叙	dao xu	3490
 捣虚敌随	dao xu di sui	1
 倒序排列	dao xu pai lie	550
+倒序排序	dao xu pai xu	111
 捣虚撇抗	dao xu pie kang	1
 倒悬	dao xuan	4125
 道学	dao xue	8580
@@ -108187,7 +108192,8 @@ sort: by_weight
 繁衍着	fan yan zhe	715
 犯颜直谏	fan yan zhi jian	425
 犯言直谏	fan yan zhi jian	65
-范阳	fan yang	1
+范阳	fan yang	111
+返样	fan yang	2
 樊羊路北口	fan yang lu bei kou	4
 凡要	fan yao	3065
 反要	fan yao	1600
@@ -122914,6 +122920,7 @@ sort: by_weight
 改打	gai da	2120
 钙代谢紊乱	gai dai xie wen luan	1
 改单	gai dan	1690
+该单	gai dan	111
 钙蛋白	gai dan bai	65
 该当	gai dang	7475
 该党	gai dang	7010
@@ -133588,6 +133595,7 @@ sort: by_weight
 共聚	gong ju	13155
 共居	gong ju	2045
 贡举	gong ju	1240
+贡菊	gong ju	1200
 贡橘	gong ju	1180
 公举	gong ju	680
 工具安装	gong ju an zhuang	1223
@@ -148561,6 +148569,7 @@ sort: by_weight
 过于靠近	guo yu kao jin	735
 过于苛刻	guo yu ke ke	1930
 过于频繁	guo yu pin fan	151
+国语水平	guo yu shui ping	111
 国于天地	guo yu tian di	1
 过于小心	guo yu xiao xin	350
 国语专辑	guo yu zhuan ji	10220
@@ -149972,6 +149981,7 @@ sort: by_weight
 还老	hai lao	111
 害了	hai le	3465
 嗨了	hai le	1111
+害了你	hai le ni	111
 海了去了	hai le qu le	516
 海乐社区	hai le she qu	120
 海乐世界	hai le shi jie	165
@@ -190433,6 +190443,7 @@ sort: by_weight
 简洁性	jian jie xing	2138
 间接选举	jian jie xuan ju	1565
 间接寻址	jian jie xun zhi	1273
+简洁一点	jian jie yi dian	111
 间接引语	jian jie yin yu	725
 间接影响	jian jie ying xiang	4510
 间接原因	jian jie yuan yin	990
@@ -194406,6 +194417,7 @@ sort: by_weight
 降序	jiang xu	4600
 姜旭光	jiang xu guang	12
 降序排列	jiang xu pai lie	2860
+降序排序	jiang xu pai xu	111
 讲学	jiang xue	47280
 降雪	jiang xue	10590
 江雪	jiang xue	6070
@@ -282654,6 +282666,7 @@ sort: by_weight
 你休想	ni xiu xiang	2210
 逆序	ni xu	12675
 逆序对	ni xu dui	2191
+逆序排序	ni xu pai xu	111
 逆序数	ni xu shu	2329
 逆序输出	ni xu shu chu	1451
 逆序数对	ni xu shu dui	140
@@ -344753,6 +344766,7 @@ sort: by_weight
 圣雄甘地	sheng xiong gan di	1375
 生锈	sheng xiu	26165
 升序	sheng xu	25212
+升序排序	sheng xu pai xu	111
 胜选	sheng xuan	1111
 盛宣怀	sheng xuan huai	239
 胜选连任	sheng xuan lian ren	1111
@@ -363871,6 +363885,7 @@ sort: by_weight
 顺序进程	shun xu jin cheng	53
 顺序控制	shun xu kong zhi	1605
 顺序排列	shun xu pai lie	18610
+顺序排序	shun xu pai xu	111
 顺序容器	shun xu rong qi	1017
 顺序搜索	shun xu sou suo	889
 顺序索引	shun xu suo yin	364
@@ -398154,7 +398169,7 @@ sort: by_weight
 纨绔膏粱	wan ku gao liang	2
 纨绔世子妃	wan ku shi zi fei	118
 纨绔子弟	wan ku zi di	341
-纨裤子弟	wan ku zi di	28
+# 纨裤子弟	wan ku zi di	28
 碗筷	wan kuai	13950
 万块	wan kuai	13720
 挽狂澜	wan kuang lan	2055
@@ -425936,6 +425951,7 @@ sort: by_weight
 夏庄村	xia zhuang cun	40
 下坠	xia zhui	14970
 瞎子	xia zi	30750
+虾子	xia zi	20000
 匣子	xia zi	10835
 虾籽	xia zi	5350
 下子	xia zi	1
@@ -450517,6 +450533,7 @@ sort: by_weight
 轩逸	xuan yi	2222
 选译	xuan yi	1560
 悬椅	xuan yi	15
+选一次	xuan yi ci	111
 选一个	xuan yi ge	17770
 宣颐家园	xuan yi jia yuan	15
 悬疑剧	xuan yi ju	530
@@ -476730,7 +476747,6 @@ sort: by_weight
 银行债权	yin hang zhai quan	111
 银行债务	yin hang zhai wu	3040
 银行账	yin hang zhang	830
-银行帐	yin hang zhang	111
 银行账号	yin hang zhang hao	57260
 银行账户	yin hang zhang hu	35775
 引航者	yin hang zhe	133
@@ -493364,6 +493380,7 @@ sort: by_weight
 予以保密	yu yi bao mi	3470
 玉翼婵娟	yu yi chan juan	1
 予以承认	yu yi cheng ren	3345
+语义重复	yu yi chong fu	111
 语义词典	yu yi ci dian	16
 余亦辞家西入秦	yu yi ci jia xi ru qin	3
 语义错误	yu yi cuo wu	118
@@ -503113,6 +503130,8 @@ sort: by_weight
 在宣布	zai xuan bu	4790
 在宣传	zai xuan chuan	21160
 在选购	zai xuan gou	24830
+再选了	zai xuan le	4420
+在选了	zai xuan le	1442
 在选择	zai xuan ze	81650
 再选择	zai xuan ze	19670
 在学	zai xue	65280
@@ -513449,8 +513468,8 @@ sort: by_weight
 这种状况	zhe zhong zhuang kuang	70
 这种子	zhe zhong zi	580
 这种做法	zhe zhong zuo fa	215
-褶皱	zhe zhou	21985
-这周	zhe zhou	12830
+这周	zhe zhou	21985
+褶皱	zhe zhou	12830
 折皱	zhe zhou	2370
 这周二	zhe zhou er	89
 这周六	zhe zhou liu	12
@@ -517412,6 +517431,8 @@ sort: by_weight
 郑秀生	zheng xiu sheng	107
 郑秀文	zheng xiu wen	13650
 正需	zheng xu	2610
+正序	zheng xu	111
+正序排序	zheng xu pai xu	111
 正虚邪实	zheng xu xie shi	26
 正需要	zheng xu yao	8305
 征选	zheng xuan	3333
@@ -533651,6 +533672,7 @@ sort: by_weight
 猪油夹沙粽子	zhu you jia sha zong zi	27
 住友家园	zhu you jia yuan	2
 朱由检	zhu you jian	25
+朱由校	zhu you jiao	680
 猪油开花包	zhu you kai hua bao	1
 杼柚空虚	zhu you kong xu	1
 朱由榔	zhu you lang	21
@@ -533664,7 +533686,6 @@ sort: by_weight
 猪油汤团	zhu you tang tuan	105
 猪油汤圆	zhu you tang yuan	45
 主油箱	zhu you xiang	280
-朱由校	zhu you jiao	680
 朱有勇	zhu you yong	176
 猪油渣面	zhu you zha mian	19
 朱友贞	zhu you zhen	2
