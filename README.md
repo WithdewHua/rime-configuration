@@ -51,6 +51,7 @@ rime
 #### 输入方案
 
 - 自然码双拼
+  - [白霜拼音](https://github.com/gaboolic/rime-frost)
   - [雾凇拼音简体词库版](https://github.com/iDvel/rime-ice/blob/main/double_pinyin.schema.yaml)
   - [魔然辅筛](https://github.com/ksqsf/rime-moran)
   - [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入方案
@@ -59,6 +60,7 @@ rime
 
 - 反查：[radical-pinyin](https://github.com/mirtlecn/rime-radical-pinyin) (`L` 触发)
 - Emoji 输入: [雾凇拼音 Emoji 方案](https://github.com/iDvel/rime-ice/blob/main/opencc/emoji.json)
+- 语法模型：[万象语法模型](https://github.com/amzxyz/RIME-LMDG)
 - 符号输入：基于 [scomper/Rime](https://github.com/scomper/rime) 自调整的符号输入 (`V` 触发)
 - [以词定字](https://github.com/BlindingDark/rime-lua-select-character)：快捷键 `[ ]`
 - [Unocode 输入](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)：`U` 触发
@@ -90,6 +92,10 @@ rime
 - 自维护 `cn_en` 中英文混合词条
 
 ### 使用说明
+
+#### 环境准备
+
+由于 [万象语法模型](https://github.com/amzxyz/RIME-LMDG) 体积较大，需自行下载至 `Rime/Common` 目录下。
 
 #### 桌面平台
 
