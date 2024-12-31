@@ -109,9 +109,11 @@ key_binder:
   import_preset: default                                        # 从 default.yaml 继承通用的
   # bindings:                                                   # 也可以再增加方案专有的
 
-# 引入八股文
+# 引入模型
 grammar:
-  language: zh-hans-t-essay-bgw
+  language: wanxiang-lts-zh-hans                                # 万象语法模型
+  collocation_max_length: 5
+  collocation_min_length: 2
 
 # 拼写设定
 speller:
@@ -163,7 +165,9 @@ speller:
 translator:
   dictionary: rime_cn                                           # 挂载词库 rime_cn.dict.yaml
   prism: double_pinyin                                          # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
-  contextual_suggestions: true                                  # 开启八股文
+  contextual_suggestions: true                                  # 配合万象模型
+  max_homophones: 7                                             # 最大同音字，配合万象模型
+  max_homographs: 7                                             # 最大同形字，配合万象模型
   initial_quality: 1.2                                          # 拼音的权重应该比英文大
   preedit_format:                                               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
     - xform/([bpmnljqxy])n/$1in/
