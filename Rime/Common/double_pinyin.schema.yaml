@@ -9,10 +9,12 @@ schema:
   author:
     - 自然码发明人：周志农
     - 雾凇拼音：iDel
+    - 白霜拼音：gaboolic
     - 魔然辅筛：ksqsf
+    - 万象：amzxyz
     - 悬墨：WithdewHua <i@10101.io>
   description: |
-    悬墨 - 基于雾凇拼音，结合「魔然·輔篩」方案
+    悬墨 - 基于雾凇/白霜拼音，结合「魔然·輔篩」方案
     https://github.com/WithdewHua/rime-configuration
   dependencies:
     - melt_eng                                                  # 英文输入，作为次翻译器挂载到拼音方案

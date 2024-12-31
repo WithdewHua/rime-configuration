@@ -9,6 +9,10 @@
       local_path: Rime/Common/dictionary/en_dicts/rime-ice/
       files:
         - en.dict.yaml
+- owner: gaboolic
+  repo: rime-frost
+  branch: master
+  downloads:
     - path: cn_dicts/
       local_path: Rime/Common/dictionary/cn_dicts/rime-ice/
       files:
