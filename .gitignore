@@ -18,4 +18,4 @@ installation.yaml
 .ttxfolder
 *.hidden
 *.nomedia
-
+*.gram
