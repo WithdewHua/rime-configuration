@@ -2,7 +2,11 @@
 --
 -- Author: ksqsf
 -- License: GPLv3
--- Version: 0.2.0
+-- Version: 0.2.2
+--
+-- 0.2.2: 支持 tab 跳轉。
+--
+-- 0.2.1: 修正與 pin 的兼容性。
 --
 -- 0.2.0: 重做。支持輔助碼下沉和諸多新的自定義選項。
 --
@@ -50,6 +54,10 @@ function Module.init(env)
    env.aux_priority_length = env.engine.schema.config:get_int("moran/aux_priority_length") or 1
    env.aux_priority_indicator = env.engine.schema.config:get_string("moran/aux_priority_indicator") or "▾"
 
+   -- Pin 適配
+   env.pin_infix = env.engine.schema.config:get_string("moran/pin/panacea/infix") or '//'
+   env.pin_indicator = env.engine.schema.config:get_string("moran/pin/indicator") or '📌'
+
    -- 輔助碼作用位置
    local aux_position = env.engine.schema.config:get_string("moran/aux_position") or "any"
    if aux_position == "first" then
@@ -80,8 +88,7 @@ function Module.init(env)
       if index > 0 and cand.comment == "" then
          return nil
       end
-      local should_defer =
-         -- 尊重 aux_priority_length
+      local should_defer = -- 尊重 aux_priority_length
          #cand.comment == env.aux_priority_length and
          -- 輸入比之前多一位輔碼
          #previous_word_aux + 1 == #cand.comment and
@@ -110,40 +117,49 @@ function Module.init(env)
    -- ------------------------------------
    -- 上屏邏輯（清空輔助碼和其他內部狀態）
    -- ------------------------------------
-   local aux_length = nil
+   local input_sans_aux = nil
 
    -- 在自帶的 OnSelect 之前生效，從而獲取到 selected candidate
    local function on_select_pre(ctx)
-      aux_length = nil
+      if (string.find(ctx:get_preedit().text, env.pin_infix) == nil) then
+         input_sans_aux = nil
 
-      local composition = ctx.composition
-      if composition:empty() then
-         return
-      end
+         local composition = ctx.composition
+         if composition:empty() then
+            return
+         end
 
-      local segment = composition:back()
-      if not (segment.status == "kSelected" or segment.status == "kConfirmed") then
-         return
-      end
+         local segment = composition:back()
+         if not (segment.status == "kSelected" or segment.status == "kConfirmed") then
+            return
+         end
 
-      local cand = segment:get_selected_candidate()
-      if env.engine.context:get_option("chaifen") then
-         cand = cand:get_genuine()
-      end
-      if cand and cand.comment and cand.comment ~= "" then
-         aux_length = #moran.rstrip(cand.comment, env.aux_priority_indicator)
+         local cand = segment:get_selected_candidate()
+         local gcand = cand:get_genuine()
+         if gcand.type == "pinned" then
+            return
+         end
+         if env.engine.context:get_option("chaifen") then
+            cand = gcand
+         end
+         if cand and cand.comment and cand.comment ~= "" then
+            local aux_length = #moran.rstrip(cand.comment, env.aux_priority_indicator)
+            input_sans_aux = ctx.input:sub(1, segment._start)
+               .. ctx.input:sub(segment._start + 1, segment._end - aux_length)
+               .. ctx.input:sub(segment._end + 1)
+         end
       end
    end
 
    -- 在自帶的 OnSelect 之後生效
    local function on_select_post(ctx)
-      if aux_length then
-         ctx.input = ctx.input:sub(1, #ctx.input - aux_length)
+      if input_sans_aux then
+         ctx.input = input_sans_aux
          if ctx.composition:has_finished_composition() then
             ctx:commit()
          end
       end
-      aux_length = nil
+      input_sans_aux = nil
       previous_word = ""
       previous_word_aux = ""
    end
@@ -269,13 +285,15 @@ function Module.TranslateEven(env, seg, input, input_len)
       env.word_over_char_tolerance,
       function(c)
          return (c.type == "phrase" or c.type == "user_phrase") and utf8.len(c.text) == input_len / 2
-      end)
+   end)
    if aux_iter:peek() and #aux_iter:peek().comment > 0 then
       table.insert(pool, aux_iter())
    end
    -- 遵守調頻要求
    if env.word_over_char_adaptive then
-      table.sort(pool, function(a, b) return a.quality > b.quality end)
+      table.sort(pool, function(a, b)
+                    return a.quality > b.quality
+      end)
    end
    -- 輸出前 tol+1 個候選。
    for _, c in pairs(pool) do
@@ -360,7 +378,11 @@ end
 -- Returns a stateful iterator of <Candidate, String?>.
 function Module.translate_without_aux(env, seg, sp)
    local translation = env.translator:query(sp, seg)
-   if translation == nil then return function() return nil end end
+   if translation == nil then
+      return function()
+         return nil
+      end
+   end
    local advance, obj = translation:iter()
    return function()
       local c = advance(obj)
@@ -390,7 +412,9 @@ function Module.aux_list(env, word)
    local last = nil
    local any_use = env.is_aux_for_any
    for _, c in utf8.codes(word) do
-      if not first then first = c end
+      if not first then
+         first = c
+      end
       last = c
       -- any char
       if any_use then
