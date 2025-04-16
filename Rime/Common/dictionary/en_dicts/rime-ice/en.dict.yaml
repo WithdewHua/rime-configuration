@@ -15,7 +15,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-02-02"
+version: "2025-03-30"
 sort: by_weight
 ...
 # +_+
@@ -320,7 +320,6 @@ admissions	admissions
 admit	admit
 admits	admits
 admitted	admitted
-Adobe	Adobe
 adobe	adobe
 adolescent	adolescent
 adolescents	adolescents
@@ -604,6 +603,7 @@ alliance	alliance
 alliances	alliances
 allied	allied
 allies	allies
+alligator	alligator
 Allison	Allison
 allocate	allocate
 allocated	allocated
@@ -2846,6 +2846,7 @@ capture	capture
 captured	captured
 captures	captures
 capturing	capturing
+capybara	capybara
 car	car
 carat	carat
 caravan	caravan
@@ -3302,6 +3303,7 @@ chili	chili
 chill	chill
 ChillSeph	ChillSeph
 chimney	chimney
+chimpanzee	chimpanzee
 chin	chin
 China	China
 china	china
@@ -5978,6 +5980,7 @@ dune	dune
 dunes	dunes
 dungeon	dungeon
 dungeons	dungeons
+dunk	dunk
 Dunlop	Dunlop
 Dunn	Dunn
 dunno	dunno
@@ -6313,7 +6316,7 @@ Emerson	Emerson
 # emi	emi
 emigrate	emigrate
 Emily	Emily
-eminem	eminem
+Eminem	Eminem
 eminent	eminent
 emirates	emirates
 emission	emission
@@ -8149,6 +8152,7 @@ Gina	Gina
 ginger	ginger
 Giorgio	Giorgio
 Giovanni	Giovanni
+giraffe	giraffe
 girl	girl
 girlfriend	girlfriend
 girls	girls
@@ -9968,6 +9972,9 @@ intimidate	intimidate
 # intl	intl
 into	into
 intonation	intonation
+intoxicate	intoxicate
+intoxicated	intoxicated
+intoxicating	intoxicating
 intra	intra
 intracellular	intracellular
 intranet	intranet
@@ -11462,7 +11469,7 @@ Mack	Mack
 Mackay	Mackay
 Mackenzie	Mackenzie
 Macmillan	Macmillan
-Macon	Macon
+macon	macon
 macOS	macOS
 Macquarie	Macquarie
 macro	macro
@@ -11825,7 +11832,7 @@ maximize	maximize
 maximizing	maximizing
 maximum	maximum
 Maxtor	Maxtor
-maxwell	maxwell
+Maxwell	Maxwell
 may	may
 May	May
 maya	maya
@@ -11997,7 +12004,7 @@ menu	menu
 menus	menus
 meow	meow
 # mer	mer
-mercedes	mercedes
+Mercedes	Mercedes
 mercer	mercer
 merchandise	merchandise
 merchandising	merchandising
@@ -12826,6 +12833,7 @@ Nepal	Nepal
 nephew	nephew
 Neptune	Neptune
 nerd	nerd
+nerf	nerf
 nerve	nerve
 nerves	nerves
 nervous	nervous
@@ -15277,7 +15285,6 @@ PVC	PVC
 # py	py
 pyjamas	pyjamas
 pyramid	pyramid
-Python	python
 python	python
 pythonic	pythonic
 # q	q
@@ -18162,6 +18169,7 @@ startle	startle
 starts	starts
 startup	startup
 starve	starve
+stash	stash
 stat	stat
 state	state
 stated	stated
@@ -18203,7 +18211,6 @@ steal	steal
 stealing	stealing
 steals	steals
 stealth	stealth
-Steam	steam
 steam	steam
 steamer	steamer
 steel	steel
@@ -20884,7 +20891,7 @@ webshots	webshots
 website	website
 websites	websites
 WebSphere	WebSphere
-webster	webster
+Webster	Webster
 wed	wed
 Wed.	Wed.
 wedding	wedding
@@ -21089,7 +21096,7 @@ wind	wind
 winding	winding
 windmill	windmill
 window	window
-windows	windows
+Windows	Windows
 winds	winds
 windshield	windshield
 Windsor	Windsor
