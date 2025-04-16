@@ -1,37 +1,37 @@
-# - owner: iDvel
-#   repo: rime-ice
-#   branch: main
-#   downloads:
-#     - path: opencc/
-#       local_path: Rime/Common/opencc/
-#       files: ["emoji.json", "emoji.txt", "others.txt"]
-#     - path: en_dicts/
-#       local_path: Rime/Common/dictionary/en_dicts/rime-ice/
-#       files:
-#         - en.dict.yaml
-# - owner: gaboolic
-#   repo: rime-frost
-#   branch: master
-#   downloads:
-#     - path: cn_dicts/
-#       local_path: Rime/Common/dictionary/cn_dicts/rime-ice/
-#       files:
-#         - 8105.dict.yaml
-#         - 41448.dict.yaml
-#         - base.dict.yaml
-#         - ext.dict.yaml
-#         - tencent.dict.yaml
-# - owner: ksqsf
-#   repo: rime-moran
-#   branch: main
-#   downloads:
-#     - path: lua/
-#       local_path: Rime/Common/lua
-#       files:
-#         - moran_aux_translator.lua
-#         - moran_fix_filter.lua
-#         - moran.lua
-#         - zrmdb.txt
+- owner: iDvel
+  repo: rime-ice
+  branch: main
+  downloads:
+    - path: opencc/
+      local_path: Rime/Common/opencc/
+      files: ["emoji.json", "emoji.txt", "others.txt"]
+    - path: en_dicts/
+      local_path: Rime/Common/dictionary/en_dicts/rime-ice/
+      files:
+        - en.dict.yaml
+- owner: gaboolic
+  repo: rime-frost
+  branch: master
+  downloads:
+    - path: cn_dicts/
+      local_path: Rime/Common/dictionary/cn_dicts/rime-ice/
+      files:
+        - 8105.dict.yaml
+        - 41448.dict.yaml
+        - base.dict.yaml
+        - ext.dict.yaml
+        - tencent.dict.yaml
+- owner: ksqsf
+  repo: rime-moran
+  branch: main
+  downloads:
+    - path: lua/
+      local_path: Rime/Common/lua
+      files:
+        - moran_aux_translator.lua
+        - moran_fix_filter.lua
+        - moran.lua
+        - zrmdb.txt
 
 - owner: outloudvi
   repo: mw2fcitx
