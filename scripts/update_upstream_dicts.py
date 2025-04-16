@@ -7,7 +7,7 @@ import yaml
 
 local_path_prefix = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 repo_url = 'https://github.com/{}/{}/raw/{}/{}'
-release_url = 'https://github.com/{}/{}/releases/latest/download/{}'
+release_url = 'https://github.com/{}/{}/releases{}download{}/{}'
 
 # 从 yaml 文件中读取文件列表
 with open('upstream_repo.yaml', 'r') as f:
@@ -19,6 +19,7 @@ for item in file_list:
     owner = item['owner']
     repo = item['repo']
     branch = item['branch']
+    tag = item.get("tag")
     downloads = item['downloads']
     
     # 循环下载文件并保存到本地
@@ -29,7 +30,10 @@ for item in file_list:
         for file in files:
             # 构造 请求 URL
             if branch.lower() == "release":
-                url = release_url.format(owner, repo, file)
+                if tag:
+                    url = release_url.format(owner, repo, "/", f"/{tag}", file)
+                else:
+                    url = release_url.format(owner, repo, "/latest/", "", file)
             else:
                 url = repo_url.format(owner, repo, branch, f"{remote_path}/{file}" if remote_path != "." else file)
             # 发送 请求
