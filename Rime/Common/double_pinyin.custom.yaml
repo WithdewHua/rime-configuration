@@ -7,11 +7,6 @@ patch:
   # 输入双拼码的时候不转化为全拼码
   translator/preedit_format: {}
 
-  # 分号上屏二候选词；引号上屏三候选词
-  key_binder/bindings:
-    - { when: has_menu, accept: semicolon, send: 2 }
-    - { when: has_menu, accept: apostrophe, send: 3 }
-
   # 主翻译器，载入 rime_cn 词库
   translator/dictionary: rime_cn
 

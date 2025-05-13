@@ -41,15 +41,21 @@ switches:
   - name: full_shape
     states: [ 半角, 全角 ]
     reset: 0
-
+  - name: chaifen
+    states: [ 拆, 扌斥 ]
+    reset: 0
+  - name: pinyinhint
+    states: [ 🔇, 🔊 ]
+    reset: 0
 
 # 输入引擎
 engine:
   processors:
+    - key_binder
+    - lua_processor@*moran_pin*pin_processor                    # 【魔然】置顶/加词
     - lua_processor@select_character                            # 以词定字
     - ascii_composer
     - recognizer
-    - key_binder
     - speller
     - punctuator
     - selector
@@ -71,15 +77,20 @@ engine:
     - table_translator@radical_lookup                           # 拆字反查
     - lua_translator@unicode                                    # Unicode
     - lua_translator@number_translator                          # 数字大写
-    - lua_translator@*moran_aux_translator                      # 魔然辅筛
+    - lua_translator@*moran_aux_translator                      # 【魔然】辅筛
+    - lua_translator@*moran_pin*panacea_translator              # 【魔然】置顶/加词
   filters:
     - reverse_lookup_filter@radical_reverse_lookup              # 拆字滤镜
     - lua_filter@reduce_english_filter                          # 降低部分英语单词在候选项的位置
     - lua_filter@autocap_filter                                 # 英文大写转换
     - lua_filter@insert_space_between_words                     # 英文词前后插入空格
-    - lua_filter@*moran_fix_filter                              # 魔然 fix 过滤
+    - lua_filter@*moran_hint_filter@auxfilter                   # 【魔然】辅助码提示
+    - lua_filter@*moran_fix_filter                              # 【魔然】 fix 过滤
+    - lua_filter@*moran_pin*pin_filter                          # 【魔然】置顶/加词过滤
     - simplifier@emoji                                          # Emoji
     - simplifier@traditionalize                                 # 简繁切换
+    - simplifier@chaifen                                        # 拆字
+    - simplifier@pinyinhint                                     # 拼音提示
     - uniquifier                                                # 去重
 
 # 标点符号
@@ -303,6 +314,23 @@ traditionalize:
   tips: none                                                    # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
   excluded_types: [ radical_lookup ]                            # 不转换反查（两分拼字）的内容
 
+# 拆字
+chaifen:
+  option_name: chaifen
+  opencc_config: moran_chaifen.json
+  tips: char
+  show_in_comment: true
+  inherit_comment: true
+  comment_format:
+    - "xform/-/ /"
+    - "xform/〕〔/｜/"
+
+pinyinhint:
+  option_name: pinyinhint
+  opencc_config: moran_pinyinhint.json
+  tips: char
+  show_in_comment: true
+
 
 # -------------
 # custom
@@ -391,3 +419,37 @@ moran:
   # last：末字
   # any：任意字
   aux_position: any
+
+  # 輔助碼提示
+  # 格式爲：<匹配的輔助碼> ¦ <詞典中的輔助碼>
+  # 該功能不顯示拆分，建議使用 Ctrl+i 顯示單字拆分
+  enable_aux_hint: true
+
+  # 「置頂」功能相關設置
+  # 輸入時通過快捷鍵 Ctrl+t 可以將高亮顯示的候選置頂，被置頂的候選位置固定，不再參與調頻
+  # 對同一輸入碼最高支持8個置頂詞，當嘗試置頂第9個詞時，最早被置頂的詞將會失效
+  pin:
+    # 「置頂」功能開關
+    enable: true
+    # 置頂詞提示符
+    indicator: "📌"
+    # 「萬靈藥」加詞功能
+    # 通過輸入 「編碼A」//「編碼B」 實現造詞功能，編碼A是這個新詞的新編碼 編碼B是目前可以打出該詞的編碼
+    # 例如 輸入 tnfb 不能得到「頭腦風暴」這一候選， 此時我們可以輸入 tnfb//tbnkfgbk 按下空格 讓「頭腦風暴」候選上屏，上屏的詞會被加入用戶詞庫中，之後我們可以用 tnfb 來得到「頭腦風暴」這一候選了
+    # 造出的詞與置頂詞是等同的
+    panacea:
+      # 加詞狀態提示
+      prompt: "〔加词〕"
+      # 加詞中綴引導符
+      infix: "//"
+      # 自由加詞模式開關，開啓此模式後，輸入「編碼A」//並空格上屏後會進入加詞狀態，此時可以連續地、不受束縛地輸入，再次按下x//空格退出加詞狀態，期間輸入的內容將會被記錄爲「編碼A」的新置頂詞
+      # 此模式適合造一些混合詞，如「A4紙」、「KOS-MOS」等
+      freestyle: false
+
+  # 「通用」字符集設置
+  # 不影響「增廣」：增廣仍顯示*所有*字符
+  #
+  # both: 允許繁體和簡體同時顯示
+  # simp: 只顯示簡化字
+  # trad: 只顯示繁體字
+  charset: both

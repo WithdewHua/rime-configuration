@@ -31,7 +31,16 @@
         - moran_aux_translator.lua
         - moran_fix_filter.lua
         - moran.lua
+        - moran_pin.lua
+        - moran_hint_filter.lua
         - zrmdb.txt
+    - path: opencc/
+      local_path: Rime/Common/opencc/
+      files:
+        - moran_chaifen.json
+        - moran_chaifen.txt
+        - moran_pinyinhint.txt
+        - moran_pinyinhint.json
 
 - owner: outloudvi
   repo: mw2fcitx

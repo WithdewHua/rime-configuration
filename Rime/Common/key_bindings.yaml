@@ -44,12 +44,12 @@ numbered_mode_switch:
     - { when: always, accept: Control+Shift+1, select: .next }
     - { when: always, accept: Control+Shift+2, toggle: ascii_mode }
     - { when: always, accept: Control+Shift+3, toggle: full_shape }
-    - { when: always, accept: Control+Shift+4, toggle: simplification }
+    - { when: always, accept: Control+Shift+4, toggle: traditionalization }
     - { when: always, accept: Control+Shift+5, toggle: extended_charset }
     - { when: always, accept: Control+Shift+exclam, select: .next }
     - { when: always, accept: Control+Shift+at, toggle: ascii_mode }
     - { when: always, accept: Control+Shift+numbersign, toggle: full_shape }
-    - { when: always, accept: Control+Shift+dollar, toggle: simplification }
+    - { when: always, accept: Control+Shift+dollar, toggle: traditionalization }
     - { when: always, accept: Control+Shift+percent, toggle: extended_charset }
 
 windows_compatible_mode_switch:
@@ -63,9 +63,21 @@ optimized_mode_switch:
     - { when: always, accept: Shift+space, toggle: ascii_mode }
     - { when: always, accept: Control+comma, toggle: full_shape }
     - { when: always, accept: Control+period, toggle: ascii_punct }
-    - { when: always, accept: Control+slash, toggle: simplification }
+    - { when: always, accept: Control+slash, toggle: traditionalization }
     - { when: always, accept: Control+backslash, toggle: extended_charset }
 
+word_selection:
+  __append:
+    - { when: has_menu, accept: semicolon, send: 2 }
+    - { when: has_menu, accept: apostrophe, send: 3 }
+
+# 一些功能的開關鍵
+function_switches:
+  __append:
+    - { when: has_menu, accept: "Control+s", toggle: traditionalization }
+    - { when: has_menu, accept: "Control+q", toggle: emoji }
+    - { when: has_menu, accept: "Control+i", toggle: chaifen }
+    - { when: has_menu, accept: "Control+period", toggle: pinyinhint }
 
 # 按键速查
 # https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md
