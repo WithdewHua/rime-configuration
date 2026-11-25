@@ -59,7 +59,7 @@
 - owner: mizorewww
   repo: rime-qwen-freq
   branch: release
-  tag: v0.4.0
+  # 不加 tag 时跟随最新 Release；需要固定版本时加上 tag: v0.4.0
   downloads:
     - path: .
       local_path: Rime/Common/dictionary/cn_dicts/
