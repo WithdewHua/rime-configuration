@@ -9,6 +9,7 @@ import_tables:
   - dictionary/cn_dicts/rime-ice/tencent         # rime-ice tencent AI 词库
   - dictionary/cn_dicts/zhwiki                   # fcitx5-pinyin-zhwiki
   - dictionary/cn_dicts/moegirl                  # outloudvi/mw2fcitx
+  - dictionary/cn_dicts/rime-ice/others          # 容错读音（争议/口语读音多编码）
 ...
 
 # 大写字母

@@ -25,6 +25,7 @@
         - base.dict.yaml
         - ext.dict.yaml
         - tencent.dict.yaml
+        - others.dict.yaml
 
 # 魔然辅筛（仓库已迁至 rimeinn，旧地址 ksqsf 会 301 重定向）
 - owner: rimeinn

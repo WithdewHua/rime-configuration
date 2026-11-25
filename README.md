@@ -96,6 +96,7 @@ scripts
   - `base` 基础词库
   - `ext` 扩展词库
   - `tencent` 腾讯词向量
+  - `others` 容错读音（争议、口语读音多编码）
 - [`zhwiki` 百万维基词库](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
 - [`moegirl` 萌娘百科词库](https://github.com/outloudvi/mw2fcitx/)
 - [`en` 英文词库](https://github.com/iDvel/rime-ice)
