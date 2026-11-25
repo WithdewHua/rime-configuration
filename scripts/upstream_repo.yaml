@@ -26,8 +26,8 @@
         - ext.dict.yaml
         - tencent.dict.yaml
 
-# 魔然辅筛
-- owner: ksqsf
+# 魔然辅筛（仓库已迁至 rimeinn，旧地址 ksqsf 会 301 重定向）
+- owner: rimeinn
   repo: rime-moran
   branch: main
   downloads:
