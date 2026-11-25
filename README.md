@@ -126,11 +126,21 @@ git clone https://github.com/WithdewHua/rime-configuration.git
 # 复制所有文件至 Rime 用户目录
 # 注意：
 #   - Windows 平台需注意先退出算法服务
-#   - Linux 适配 fcitx5
+#   - Linux / macOS 上的 fcitx5 同步到 ~/.local/share/fcitx5/rime
 python3 init_rime.py
 
 # deploy&enjoy!
 ```
+
+`init_rime.py` 默认同步到当前系统的 Rime 用户目录；macOS 上会自动判断用 fcitx5 还是鼠须管（装了 fcitx5 就用 fcitx5），也可以显式指定：
+
+```shell
+python3 init_rime.py --ime squirrel     # 强制鼠须管（~/Library/Rime）
+python3 init_rime.py --ime fcitx5       # 强制 fcitx5
+python3 init_rime.py --os windows       # 交叉同步到其他系统
+```
+
+fcitx5 侧的重新部署：重启 Fcitx5 或在其菜单里触发一次部署；鼠须管用菜单里的“重新部署”。
 
 #### 移动平台
 

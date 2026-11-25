@@ -24,3 +24,7 @@ fonts/*.otf
 
 .pi/tasks/
 .pi/delegate/
+
+# Python
+__pycache__/
+*.pyc
