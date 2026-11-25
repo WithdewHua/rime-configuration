@@ -22,7 +22,6 @@ rime
 │  │  │  │  └── tencent.dict.yaml
 │  │  │  └── zhwiki.dict.yaml
 │  │  ├── en_dicts/rime-ice/en.dict.yaml
-│  │  └── multi_lang_dicts/cn_en.dict.yaml
 │  ├── double_pinyin.custom.yaml
 │  ├── double_pinyin.schema.yaml
 │  ├── key_bindings.yaml
@@ -100,7 +99,6 @@ scripts
 - [`zhwiki` 百万维基词库](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
 - [`moegirl` 萌娘百科词库](https://github.com/outloudvi/mw2fcitx/)
 - [`en` 英文词库](https://github.com/iDvel/rime-ice)
-- 自维护 `cn_en` 中英文混合词条
 
 其中 `zhwiki`、`moegirl`、`en` 与语法模型使用 [rime-qwen-freq](https://github.com/mizorewww/rime-qwen-freq) 提供的 Qwen3-14B-Base 校准版本：扩展词库补齐与基础词库同尺度的词频，语法模型存储词对点互信息。生成流程见 [给 Rime 输入法扩充词库](https://mizore.blog/posts/rime-llm-word-frequency/)。
 
