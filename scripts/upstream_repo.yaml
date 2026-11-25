@@ -1,3 +1,9 @@
+# 上游数据清单
+# 由 update_upstream_dicts.py 同步，条目支持两种方式：
+#   downloads: 从仓库分支或 Release 下载（.gz 自动解压，可用 {file, local} 重命名）
+#   generate: 浅克隆仓库后执行生成脚本，把标准输出写入 local_path
+
+# 雾凇拼音 OpenCC 数据
 - owner: iDvel
   repo: rime-ice
   branch: main
@@ -5,10 +11,8 @@
     - path: opencc/
       local_path: Rime/Common/opencc/
       files: ["emoji.json", "emoji.txt", "others.txt"]
-    - path: en_dicts/
-      local_path: Rime/Common/dictionary/en_dicts/rime-ice/
-      files:
-        - en.dict.yaml
+
+# 白霜拼音中文词库
 - owner: gaboolic
   repo: rime-frost
   branch: master
@@ -21,6 +25,8 @@
         - base.dict.yaml
         - ext.dict.yaml
         - tencent.dict.yaml
+
+# 魔然辅筛
 - owner: ksqsf
   repo: rime-moran
   branch: main
@@ -33,32 +39,39 @@
         - moran.lua
         - moran_pin.lua
         - moran_hint_filter.lua
-        - zrmdb.txt
     - path: opencc/
       local_path: Rime/Common/opencc/
       files:
         - moran_chaifen.json
-        - moran_chaifen.txt
         - moran_pinyinhint.txt
         - moran_pinyinhint.json
+  # 上游不再提交这两份生成产物（.gitignore 中的 Generated artifacts），克隆后本地生成
+  generate:
+    - local_path: Rime/Common/lua/zrmdb.txt
+      command: ["uv", "run", "tools/gen_zrmdb.py"]
+    - local_path: Rime/Common/opencc/moran_chaifen.txt
+      command: ["uv", "run", "tools/gen_chaifen_filter.py"]
 
-- owner: outloudvi
-  repo: mw2fcitx
-  branch: release  # download from release
+# Qwen3-14B-Base 词频校准词库与语法模型
+# 说明见 https://mizore.blog/posts/rime-llm-word-frequency/
+# 仅替换本地已有同名来源的词库（zhwiki、moegirl、en）；语法模型替代万象 gram
+# 其余成品词库（cs_ai、zhwiktionary、web_slang、wanxiang_mixed、en_ext）本地不使用
+- owner: mizorewww
+  repo: rime-qwen-freq
+  branch: release
+  tag: v0.4.0
   downloads:
     - path: .
       local_path: Rime/Common/dictionary/cn_dicts/
       files:
-        - moegirl.dict.yaml
-
-# 万象模型
-- owner: amzxyz
-  repo: RIME-LMDG
-  branch: release
-  tag: LTS
-  downloads:
+        - zhwiki.dict.yaml.gz
+        - moegirl.dict.yaml.gz
+    - path: .
+      local_path: Rime/Common/dictionary/en_dicts/rime-ice/
+      files:
+        - file: rime_ice.en.dict.yaml.gz
+          local: en.dict.yaml
     - path: .
       local_path: Rime/Common/
       files:
-        - wanxiang-lts-zh-hans.gram
-
+        - qwen14b-zh-hans.gram.gz

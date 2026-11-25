@@ -5,16 +5,17 @@
 schema:
   schema_id: double_pinyin
   name: 悬墨 - 自然码双拼
-  version: "2024-07-20"
+  version: "2026-11-26"
   author:
     - 自然码发明人：周志农
     - 雾凇拼音：iDel
     - 白霜拼音：gaboolic
     - 魔然辅筛：ksqsf
-    - 万象：amzxyz
+    - Qwen 词频：mizorewww
     - 悬墨：WithdewHua <i@10101.io>
   description: |
     悬墨 - 基于雾凇/白霜拼音，结合「魔然·輔篩」方案
+    词库与语法模型使用 Qwen3-14B-Base 校准词频版本
     https://github.com/WithdewHua/rime-configuration
   dependencies:
     - melt_eng                                                  # 英文输入，作为次翻译器挂载到拼音方案
@@ -123,8 +124,9 @@ key_binder:
   # bindings:                                                   # 也可以再增加方案专有的
 
 # 引入模型
+# Qwen3-14B-Base 蒸馏的点互信息语法模型，见 scripts/upstream_repo.yaml
 grammar:
-  language: wanxiang-lts-zh-hans                                # 万象语法模型
+  language: qwen14b-zh-hans
   collocation_max_length: 5
   collocation_min_length: 2
 

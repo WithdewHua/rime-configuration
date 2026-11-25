@@ -7,15 +7,22 @@
 ```shell
 rime
 ├── Android
-│  ├── backgrounds
-│  ├── trime.yaml
-│  ├── 单静.trime.custom.yaml
-│  └── 单静.trime.yaml
 ├── Common
 │  ├── build
 │  ├── custom_phrase_double_pinyin.txt
 │  ├── default.yaml
 │  ├── dictionary
+│  │  ├── cn_dicts
+│  │  │  ├── moegirl.dict.yaml
+│  │  │  ├── rime-ice
+│  │  │  │  ├── 41448.dict.yaml
+│  │  │  │  ├── 8105.dict.yaml
+│  │  │  │  ├── base.dict.yaml
+│  │  │  │  ├── ext.dict.yaml
+│  │  │  │  └── tencent.dict.yaml
+│  │  │  └── zhwiki.dict.yaml
+│  │  ├── en_dicts/rime-ice/en.dict.yaml
+│  │  └── multi_lang_dicts/cn_en.dict.yaml
 │  ├── double_pinyin.custom.yaml
 │  ├── double_pinyin.schema.yaml
 │  ├── key_bindings.yaml
@@ -24,21 +31,24 @@ rime
 │  ├── melt_eng.schema.yaml
 │  ├── opencc
 │  ├── punctuation.yaml
+│  ├── qwen14b-zh-hans.gram                         # 语法模型，体积较大不入库，由 scripts 同步
 │  ├── radical_pinyin.custom.yaml
 │  ├── radical_pinyin.dict.yaml
 │  ├── radical_pinyin.schema.yaml
 │  ├── rime.lua
 │  ├── rime_cn.dict.yaml
 │  ├── rime_en.dict.yaml
-│  ├── symbols.yaml
-│  ├── zh-hans-t-essay-bgc.gram
-│  └── zh-hans-t-essay-bgw.gram
+│  └── symbols.yaml
 ├── Darwin
 │  └── squirrel.custom.yaml
 ├── iOS
 ├── Linux
 └── Windows
    └── weasel.custom.yaml
+
+scripts
+├── update_upstream_dicts.py                          # 上游数据同步脚本
+└── upstream_repo.yaml                                # 上游数据清单
 ```
 
 仓库中 `Rime` 目录下为 Rime 所有配置文件，其中：
@@ -60,7 +70,7 @@ rime
 
 - 反查：[radical-pinyin](https://github.com/mirtlecn/rime-radical-pinyin) (`L` 触发)
 - Emoji 输入: [雾凇拼音 Emoji 方案](https://github.com/iDvel/rime-ice/blob/main/opencc/emoji.json)
-- 语法模型：[万象语法模型](https://github.com/amzxyz/RIME-LMDG)
+- 语法模型：[Qwen3-14B-Base 蒸馏语法模型](https://github.com/mizorewww/rime-qwen-freq)
 - 符号输入：基于 [scomper/Rime](https://github.com/scomper/rime) 自调整的符号输入 (`V` 触发)
 - [以词定字](https://github.com/BlindingDark/rime-lua-select-character)：快捷键 `[ ]`
 - [Unocode 输入](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)：`U` 触发
@@ -81,21 +91,32 @@ rime
 
 #### 词库
 
-- [雾凇拼音词库](https://github.com/iDvel/rime-ice)
+- [白霜拼音词库](https://github.com/gaboolic/rime-frost)
   - `8105` 字表
   - `41448` 字表
   - `base` 基础词库
   - `ext` 扩展词库
   - `tencent` 腾讯词向量
 - [`zhwiki` 百万维基词库](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
-- [`moegirl` 维基词库](https://github.com/outloudvi/mw2fcitx/)
+- [`moegirl` 萌娘百科词库](https://github.com/outloudvi/mw2fcitx/)
+- [`en` 英文词库](https://github.com/iDvel/rime-ice)
 - 自维护 `cn_en` 中英文混合词条
+
+其中 `zhwiki`、`moegirl`、`en` 与语法模型使用 [rime-qwen-freq](https://github.com/mizorewww/rime-qwen-freq) 提供的 Qwen3-14B-Base 校准版本：扩展词库补齐与基础词库同尺度的词频，语法模型存储词对点互信息。生成流程见 [给 Rime 输入法扩充词库](https://mizore.blog/posts/rime-llm-word-frequency/)。
 
 ### 使用说明
 
-#### 环境准备
+#### 上游数据
 
-由于 [万象语法模型](https://github.com/amzxyz/RIME-LMDG) 体积较大，需自行下载至 `Rime/Common` 目录下。
+词库、OpenCC 数据、辅助码表与语法模型均从上游同步，`*.gram` 体积较大不入库，克隆后需先执行一次同步：
+
+```shell
+cd scripts
+uv sync                       # 或 pip install requests pyyaml
+uv run python update_upstream_dicts.py
+```
+
+同步清单见 `scripts/upstream_repo.yaml`。魔然的 `zrmdb.txt`、`moran_chaifen.txt` 上游不再提交，脚本会克隆仓库后用其 `uv` 生成，因此需要本机有 `uv`。
 
 #### 桌面平台
 
@@ -154,6 +175,7 @@ python3 init_rime.py --os ios
 - [rime-radical-pinyin](https://github.com/mirtlecn/rime-radical-pinyin)
 - [felixonmars/fcitx5-pinyin-zhwiki](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
 - [mw2fcitx](https://github.com/outloudvi/mw2fcitx/)
+- [mizorewww/rime-qwen-freq](https://github.com/mizorewww/rime-qwen-freq)
 
 #### 字体
 
