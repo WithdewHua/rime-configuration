@@ -8,8 +8,10 @@ build/*
 custom_phrase.txt
 *.userdb/
 *.userdb.txt
-user.yaml
-installation.yaml
+# 字体（体积大，不随仓库分发）
+fonts/*.zip
+fonts/*.ttf
+fonts/*.otf
 
 # IDE
 .vscode/*

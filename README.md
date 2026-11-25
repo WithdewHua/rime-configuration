@@ -182,3 +182,5 @@ python3 init_rime.py --os ios
 - [霞鹜文楷](https://github.com/lxgw/LxgwWenKai)
 - [花园明朝](http://fonts.jp/hanazono/)
 - [謎乃明朝](https://github.com/ge9/NazonoMincho)
+
+字体文件体积较大，不随仓库分发（`fonts/` 已忽略），按上方链接自行下载放入即可。
